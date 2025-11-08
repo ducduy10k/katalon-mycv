@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Phone number_p-inputtext p-component _c71f92</name>
+   <tag></tag>
+   <elementGuidId>d9d6873c-e95c-4cc9-9a03-f5fc4ee37d2c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//input[@type='text'])[6]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>span >> internal:has-text=&quot;City, Province&quot;i >> internal:role=textbox</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>c2d0347a-340b-4aed-99c8-4529edee284a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+      <webElementGuid>fe98da6d-f3eb-4e9b-ba10-3783b104ab27</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>p-inputtext p-component p-element ng-untouched ng-pristine ng-valid p-filled</value>
+      <webElementGuid>6807512f-269f-418e-9731-2ef345324e1e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;l-main&quot;)/div[@class=&quot;main-panel&quot;]/app-my-info-builder[@class=&quot;ng-star-inserted&quot;]/div[@class=&quot;w-100&quot;]/div[@class=&quot;flex flex-row mb-8&quot;]/div[@class=&quot;p-fluid w-full&quot;]/span[@class=&quot;p-float-label&quot;]/input[@class=&quot;p-inputtext p-component p-element ng-untouched ng-pristine ng-valid p-filled&quot;]</value>
+      <webElementGuid>59bda460-71e6-433b-9dbf-ad4b482d510d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//input[@type='text'])[6]</value>
+      <webElementGuid>c7ea90e0-327a-4504-8483-7551bf078a25</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='l-main']/div[4]/app-my-info-builder/div/div[6]/div/span/input</value>
+      <webElementGuid>976672b7-af71-4266-966e-5c1cd0245201</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[6]/div/span/input</value>
+      <webElementGuid>d171d918-0f7e-42f9-93b9-c3df5b342dda</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'text']</value>
+      <webElementGuid>b42c8397-c04d-46be-b424-6285b6b460b5</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

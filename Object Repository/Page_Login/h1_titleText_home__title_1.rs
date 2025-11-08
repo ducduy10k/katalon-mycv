@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>h1_titleText_home__title_1</name>
+   <tag></tag>
+   <elementGuidId>1dc1fbc5-fb5a-475b-9165-d12af1b3269b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>h1.home__title</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='l-main']/div[4]/app-my-info-builder/div/div[3]/div/span/angular-editor/div/div/div/h1</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=heading[name=&quot;Hi, I'am Duy Full Stack Developer&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h1</value>
+      <webElementGuid>982cf421-0bc1-476f-815a-9ff9b77f8399</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>home__title</value>
+      <webElementGuid>c1c10faf-db2d-4075-9f10-78c1e92270c0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Hi,I'am DuyFull Stack Developer</value>
+      <webElementGuid>8d56b106-e0f9-46d0-87cf-3a15ccc429c3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;l-main&quot;)/div[@class=&quot;main-panel&quot;]/app-my-info-builder[@class=&quot;ng-star-inserted&quot;]/div[@class=&quot;w-100&quot;]/div[@class=&quot;flex flex-row mb-8&quot;]/div[@class=&quot;p-fluid w-full&quot;]/span[@class=&quot;p-float-label&quot;]/angular-editor[@class=&quot;ng-untouched ng-valid ng-dirty&quot;]/div[@class=&quot;angular-editor&quot;]/div[@class=&quot;angular-editor-wrapper&quot;]/div[@class=&quot;angular-editor-textarea&quot;]/h1[@class=&quot;home__title&quot;]</value>
+      <webElementGuid>175a2081-e97e-4ee8-accd-c46a7721ee78</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='l-main']/div[4]/app-my-info-builder/div/div[3]/div/span/angular-editor/div/div/div/h1</value>
+      <webElementGuid>acda9058-feab-49ce-9d04-93ff0be66fd0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='titleText'])[1]/following::h1[1]</value>
+      <webElementGuid>b0bc2b3e-b605-4b34-9317-0169ff36d5c1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='redText'])[1]/following::h1[1]</value>
+      <webElementGuid>2e33063d-b175-4e95-8875-bd4fedbb5f5f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Description'])[1]/preceding::h1[1]</value>
+      <webElementGuid>c058d68b-efe4-4499-adb8-da3da34d8358</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Hi,']/parent::*</value>
+      <webElementGuid>b0cd0cde-dab3-4411-b1b9-35fec445ecee</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h1</value>
+      <webElementGuid>7cf34779-b7ec-405e-aa64-7a97798f055e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h1[(text() = concat(&quot;Hi,I&quot; , &quot;'&quot; , &quot;am DuyFull Stack Developer&quot;) or . = concat(&quot;Hi,I&quot; , &quot;'&quot; , &quot;am DuyFull Stack Developer&quot;))]</value>
+      <webElementGuid>5ebf10b7-bf1a-422e-a752-0b52705bb59c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
