@@ -17,9 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://devduynd.web.app/builder')
+CustomKeywords.'mycv.MyCVKeywords.AppLogin'()
+
+WebUI.waitForElementPresent(findTestObject('Page_Login/div_Setting_w-100'), 1)
 
 WebUI.setText(findTestObject('Object Repository/Page_Login/input_Profile_p-inputtext p-component p-ele_2ea6b0'), 'Duy')
 
@@ -40,4 +42,6 @@ WebUI.setText(findTestObject('Object Repository/Page_Login/input_Phone number_p-
 WebUI.setText(findTestObject('Object Repository/Page_Login/input_City, Province_p-inputtext p-componen_057006'), 'Kim Sơn')
 
 WebUI.click(findTestObject('Object Repository/Page_Login/div_Setting_main-panel_1'))
+
+CustomKeywords.'mycv.MyCVKeywords.finalTestCase'()
 

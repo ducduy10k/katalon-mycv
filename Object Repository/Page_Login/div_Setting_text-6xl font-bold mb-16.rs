@@ -6,12 +6,12 @@
    <elementGuidId>4f19ff08-e297-486d-8506-234a0f35f096</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.text-6xl.font-bold.mb-16</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='l-main']/div[4]/app-my-info-builder/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.text-6xl.font-bold.mb-16</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>12de78f4-aabe-4a05-b640-db0b157b3783</webElementGuid>
+      <webElementGuid>efe13d1e-0a67-40d3-9138-a220c69cafe7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>text-6xl font-bold mb-16</value>
-      <webElementGuid>040089f5-2e62-4dd4-a359-eb2cd774c476</webElementGuid>
+      <webElementGuid>163f9f66-3eb2-4446-b6b1-4c171ed13c41</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Profile</value>
-      <webElementGuid>3a8a86a7-7c68-4a53-8c12-88dfa970e837</webElementGuid>
+      <webElementGuid>a2f8b159-7d51-407c-ac52-df76c16ee0be</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;l-main&quot;)/div[@class=&quot;main-panel&quot;]/app-my-info-builder[@class=&quot;ng-star-inserted&quot;]/div[@class=&quot;w-100&quot;]/div[@class=&quot;text-6xl font-bold mb-16&quot;]</value>
-      <webElementGuid>033d1fd9-dcea-4cee-9cf4-70e796e0f5cb</webElementGuid>
+      <webElementGuid>fe0508fc-bcfa-494b-9d9b-107bc850346a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='l-main']/div[4]/app-my-info-builder/div/div</value>
-      <webElementGuid>53d5f823-8cec-4dad-92a6-e260a94d7a13</webElementGuid>
+      <webElementGuid>64437372-4e30-419c-9c59-ab9ad0b33c51</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Setting'])[1]/following::div[4]</value>
-      <webElementGuid>0898d46d-f4e4-4a5f-b994-f9c249ab3715</webElementGuid>
+      <webElementGuid>0afc1d00-94a4-46d9-8737-57a3fc8322f8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Import data'])[1]/following::div[6]</value>
-      <webElementGuid>84438e29-afba-4217-b929-69b06a8c80cd</webElementGuid>
+      <webElementGuid>dbd0de6b-3c75-4f92-afd6-3093057ec985</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='First name'])[1]/preceding::div[1]</value>
-      <webElementGuid>4878095c-4cbf-45ce-a5c7-85d3c26d726f</webElementGuid>
+      <webElementGuid>d937a0a5-4760-4b90-8821-d17236b14a78</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Last name'])[1]/preceding::div[2]</value>
-      <webElementGuid>0a58a2c8-6455-41d0-9e2f-1d8999821aa2</webElementGuid>
+      <webElementGuid>8ed89240-d2db-4fd6-8ff3-0dce13f51345</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Profile']/parent::*</value>
-      <webElementGuid>b6d28efb-16c7-40cb-97b0-7ed5a80c7713</webElementGuid>
+      <webElementGuid>3f8a641b-c7a7-4a51-8cc7-1be15ae298d2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//app-my-info-builder/div/div</value>
-      <webElementGuid>6ee9fb73-8167-49e2-9697-2df7e53773ce</webElementGuid>
+      <webElementGuid>bbc6c074-e418-4a3c-95c7-fb8ed0fb1468</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +117,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Profile' or . = 'Profile')]</value>
-      <webElementGuid>e3a91635-7591-4ff2-9097-09bf3f9c95e3</webElementGuid>
+      <webElementGuid>ef62088f-2f59-4d30-8ac1-306ff76c05ad</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
