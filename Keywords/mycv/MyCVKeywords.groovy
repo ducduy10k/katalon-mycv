@@ -23,14 +23,16 @@ import internal.GlobalVariable
 public class MyCVKeywords {
 
 	@Keyword
-	def AppLogin () {
+	def AppLogin (String userName, String password) {
 		WebUI.navigateToUrl('https://devduynd.web.app/auth/login')
 
-		WebUI.setText(findTestObject('Object Repository/Page_Login/input_Email_email'), 'test@yopmail.com')
+		WebUI.setText(findTestObject('Object Repository/Page_Login/input_Email_email'), userName)
 
-		WebUI.setEncryptedText(findTestObject('Object Repository/Page_Login/input_Password_password'), 'RigbBhfdqOBGNlJIWM1ClA==')
+		WebUI.setEncryptedText(findTestObject('Object Repository/Page_Login/input_Password_password'), password)
 
 		WebUI.click(findTestObject('Object Repository/Page_Login/button_Forgot your password_btn bg-blue-400_bf5a24'))
+
+		WebUI.waitForElementPresent(findTestObject('Page_Login/div_Setting_w-100'), 10)
 	}
 
 	@Keyword

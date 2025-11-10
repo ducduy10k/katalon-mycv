@@ -16,13 +16,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.annotation.*
 
 WebUI.openBrowser('')
 
-CustomKeywords.'mycv.MyCVKeywords.AppLogin'()
+CustomKeywords.'mycv.MyCVKeywords.AppLogin'('tes122t@yopmail.com', 'RigbBhfdqOBGNlJIWM1ClA==')
 
-WebUI.waitForElementPresent(findTestObject('Page_Login/div_Setting_w-100'), 1)
-
+//WebUI.waitForElementPresent(findTestObject('Page_Login/div_Setting_w-100'), 1)
 WebUI.setText(findTestObject('Object Repository/Page_Login/input_Profile_p-inputtext p-component p-ele_2ea6b0'), 'Duy')
 
 WebUI.click(findTestObject('Object Repository/Page_Login/input_First name_p-inputtext p-component p-_c00827'))
@@ -44,4 +44,10 @@ WebUI.setText(findTestObject('Object Repository/Page_Login/input_City, Province_
 WebUI.click(findTestObject('Object Repository/Page_Login/div_Setting_main-panel_1'))
 
 CustomKeywords.'mycv.MyCVKeywords.finalTestCase'()
+
+WebUI.closeBrowser()
+
+@TearDown
+def onFailure() {
+}
 

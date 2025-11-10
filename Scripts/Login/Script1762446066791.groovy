@@ -23,9 +23,9 @@ WebUI.navigateToUrl('https://devduynd.web.app/')
 
 WebUI.click(findTestObject('Object Repository/Page_MyCV - Home/div_Contact_nav__login-logout'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Login/input_Email_email'), 'test@yopmail.com')
+WebUI.setText(findTestObject('Object Repository/Page_Login/input_Email_email'), userName)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Login/input_Password_password'), 'RigbBhfdqOBGNlJIWM1ClA==')
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Login/input_Password_password'), password)
 
 WebUI.click(findTestObject('Object Repository/Page_Login/button_Forgot your password_btn bg-blue-400_bf5a24'))
 

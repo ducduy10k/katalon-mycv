@@ -6,4 +6,30 @@
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>7347f7ab-5731-477e-a717-a6495d09d0bf</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4110318d-5a09-409a-bf69-fabfd22e8d98</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>98d0127b-63a3-4c6e-805e-9abbcfbf8adb</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'test@yopmail.com'</defaultValue>
+      <description></description>
+      <id>4110318d-5a09-409a-bf69-fabfd22e8d98</id>
+      <masked>false</masked>
+      <name>userName</name>
+   </variable>
+   <variable>
+      <defaultValue>'RigbBhfdqOBGNlJIWM1ClA=='</defaultValue>
+      <description></description>
+      <id>98d0127b-63a3-4c6e-805e-9abbcfbf8adb</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
 </TestCaseEntity>
