@@ -1,0 +1,52 @@
+pipeline {
+    agent any
+
+    environment {
+        KATALON_IMAGE = 'katalonstudio/katalon:latest'
+        PROJECT_PATH = '/katalon/project'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                echo 'Checkout source code from GitHub...'
+                checkout([$class: 'GitSCM',
+                    branches: [[name: '*/main']],
+                    userRemoteConfigs: [[url: 'https://github.com/MaiDepzai/demo_cicd_katalon.git']]
+                ])
+            }
+        }
+
+        stage('Run Katalon Tests (Docker)') {
+            steps {
+                echo "Running Katalon Test Suite using Docker container..."
+                sh '''
+                    docker run --rm -v $PWD:/katalon/katalon/source \
+                        katalonstudio/katalon:latest katalonc \
+                        -runMode=console \
+                        -projectPath="/katalon/katalon/source/demo_cicd_katalon.prj" \
+                        -testSuitePath="Test Suites/TS_demo_01" \
+                        -browserType="Chrome" \
+                        -reportFolder="Reports"
+                '''
+            }
+        }
+
+
+        stage('Archive Reports') {
+            steps {
+                echo 'Archiving test reports...'
+                archiveArtifacts artifacts: 'Reports/**/*', fingerprint: true
+            }
+        }
+    }
+
+    post {
+        failure {
+            echo 'Katalon tests failed!'
+        }
+        success {
+            echo 'Katalon tests succeeded!'
+        }
+    }
+}
