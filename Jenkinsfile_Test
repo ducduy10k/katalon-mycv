@@ -14,9 +14,14 @@ pipeline {
         stage('Run Katalon Tests (Docker)') {
             steps {
                 echo "Running Katalon Test Suite using Docker container..."
-                sh '''
-                    
-                '''
+                sh """
+                    "/Users/maidt11/tools/katalon_engine/Katalon_Studio_Engine_MacOS_Arm64-10.4.0/Katalon Studio Engine.app/Contents/MacOS/katalonc" \
+                    -runMode=console \
+                    -projectPath="/var/jenkins_home/workspace/test_01_demo_katalon/demo_cicd_katalon.prj" \
+                    -testSuitePath="Test Suites/TS_demo_01" \
+                    -browserType="Chrome" \
+                    -reportFolder="Reports"
+                    """
             }
         }
 
