@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo 'Checkout source code from GitHub...'
                 checkout([$class: 'GitSCM',
-                    branches: [[name: '*/main']],
+                    branches: [[name: '*/master']],
                     userRemoteConfigs: [[url: 'https://github.com/ducduy10k/katalon-mycv.git']]
                 ])
             }
