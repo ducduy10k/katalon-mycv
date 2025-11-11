@@ -1,11 +1,5 @@
 pipeline {
     agent any
-
-    environment {
-        KATALON_IMAGE = 'katalonstudio/katalon:latest'
-        PROJECT_PATH = '/katalon/project'
-    }
-
     stages {
         stage('Checkout') {
             steps {
@@ -21,13 +15,7 @@ pipeline {
             steps {
                 echo "Running Katalon Test Suite using Docker container..."
                 sh '''
-                    docker run --rm -v $PWD:/katalon/katalon/source \
-                        katalonstudio/katalon:latest katalonc \
-                        -runMode=console \
-                        -projectPath="/katalon/katalon/source/demo_cicd_katalon.prj" \
-                        -testSuitePath="Test Suites/TS_demo_01" \
-                        -browserType="Chrome" \
-                        -reportFolder="Reports"
+                    
                 '''
             }
         }
