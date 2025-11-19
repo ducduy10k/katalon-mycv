@@ -45,16 +45,6 @@ plugins/
 Object\ Repository/.DS_Store
 
 # =============================
-# Profiles (giữ lại default, ignore local/prod)
-# =============================
-Profiles/local.glbl
-Profiles/prod.glbl
-
-# Nếu bạn muốn ignore toàn bộ profiles khác default
-# Profiles/*.glbl
-# !Profiles/default.glbl
-
-# =============================
 # Test Suite & Listener cache
 # =============================
 Test\ Listeners/*.tmp
@@ -75,5 +65,32 @@ settings/internal/com.kms.katalon.composer.mobile.settings.properties
 # =============================
 # Windows weird encoding temp files
 # =============================
-Reports??/
-Reports\342\200\235\n/
+Reports
+Reports/
+
+Reports"
+
+.gradle
+
+bin
+
+Reports
+
+Libs
+
+output
+
+!output/.gitkeep
+build
+
+.classpath
+
+.project
+
+.cache
+/bin/
+/Libs/
+/.settings/
+/.classpath
+.svn/
+.cache/
