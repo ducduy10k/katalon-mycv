@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS - Fill data profile" time="215.511" tests="1" failures="0" errors="0">
+   <testsuite name="TS - Fill data profile" tests="1" failures="0" errors="0" time="215.511" skipped="0" timestamp="2025-11-14T04:20:01.894Z" hostname="nguyenduy - localhost" id="Test Suites/TS - Fill data profile">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="/Users/nguyenduy/Katalon Studio/MyCV_Autotest/Reports/20251114_111952/TS - Fill data profile/20251114_111954"/>
+         <property name="logFiles" value="/Users/nguyenduy/Katalon Studio/MyCV_Autotest/Reports/20251114_111952/TS - Fill data profile/20251114_111954/execution0.log, /Users/nguyenduy/Katalon Studio/MyCV_Autotest/Reports/20251114_111952/TS - Fill data profile/20251114_111954/console0.log"/>
+         <property name="attachments" value="/Users/nguyenduy/Katalon Studio/MyCV_Autotest/Reports/20251114_111952/TS - Fill data profile/20251114_111954/1763094060492.png, Screenshots/Test Cases/Fill data profile_FAILED.png"/>
+         <property name="hostName" value="nguyenduy - localhost"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="10.4.0.0"/>
+         <property name="browser" value="Chrome 142.0.7444.162"/>
+         <property name="userFullName" value=""/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="sessionId" value="3cb2ef8382a7608ef2827dbea9426572"/>
+         <property name="projectName" value="MyCV_Autotest"/>
+         <property name="seleniumVersion" value="4.28.1"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/Fill data profile" time="155.8" classname="Test Cases/Fill data profile" status="PASSED">
+         <system-out><![CDATA[14-11-2025T11:21:01 - [TEST_CASE][PASSED] - Test Cases/Fill data profile: Test Cases/Fill data profile
+
+14-11-2025T11:21:01 - [TEST_STEP][PASSED] - Start listener action : beforeTestCase: null
+
+14-11-2025T11:21:01 - [TEST_STEP][PASSED] - println(==> Bắt đầu test case: $testCaseContext.getTestCaseId()): null
+
+14-11-2025T11:21:01 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+14-11-2025T11:21:01 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+14-11-2025T11:21:01 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+14-11-2025T11:21:01 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+14-11-2025T11:21:05 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+14-11-2025T11:21:05 - [TEST_STEP][PASSED] - mycv.MyCVKeywords.AppLogin("test@yopmail.com", "RigbBhfdqOBGNlJIWM1ClA=="): mycv.MyCVKeywords.AppLogin is PASSED
+
+14-11-2025T11:21:12 - [MESSAGE][PASSED] - Navigate to 'https://devduynd.web.app/auth/login' successfully
+
+14-11-2025T11:21:27 - [MESSAGE][WARNING] - Waiting for element timed out
+
+14-11-2025T11:21:27 - [MESSAGE][PASSED] - Text 'test@yopmail.com' is set on object 'Object Repository/Page_Login/input_Email_email'
+
+14-11-2025T11:21:37 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Login/input_Password_password'
+
+14-11-2025T11:21:47 - [MESSAGE][WARNING] - Waiting for element timed out
+
+14-11-2025T11:21:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/button_Forgot your password_btn bg-blue-400_bf5a24' is clicked on
+
+14-11-2025T11:21:55 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Login/div_Setting_w-100' is present
+
+14-11-2025T11:21:55 - [MESSAGE][PASSED] - mycv.MyCVKeywords.AppLogin is PASSED
+
+14-11-2025T11:21:55 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Login/input_Profile_p-inputtext p-component p-ele_2ea6b0"), "Duy"): Text 'Duy' is set on object 'Object Repository/Page_Login/input_Profile_p-inputtext p-component p-ele_2ea6b0'
+
+14-11-2025T11:22:03 - [MESSAGE][PASSED] - Text 'Duy' is set on object 'Object Repository/Page_Login/input_Profile_p-inputtext p-component p-ele_2ea6b0'
+
+14-11-2025T11:22:03 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Login/input_First name_p-inputtext p-component p-_c00827")): Object: 'Object Repository/Page_Login/input_First name_p-inputtext p-component p-_c00827' is clicked on
+
+14-11-2025T11:22:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/input_First name_p-inputtext p-component p-_c00827' is clicked on
+
+14-11-2025T11:22:05 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Login/input_First name_p-inputtext p-component p-_c00827"), "Nguyễn "): Text 'Nguyễn ' is set on object 'Object Repository/Page_Login/input_First name_p-inputtext p-component p-_c00827'
+
+14-11-2025T11:22:25 - [MESSAGE][WARNING] - Waiting for element timed out
+
+14-11-2025T11:22:37 - [MESSAGE][WARNING] - Waiting for element timed out
+
+14-11-2025T11:22:38 - [MESSAGE][PASSED] - Text 'Nguyễn ' is set on object 'Object Repository/Page_Login/input_First name_p-inputtext p-component p-_c00827'
+
+14-11-2025T11:22:38 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Login/input_Description_p-inputtext p-component p_f9ed0f")): Object: 'Object Repository/Page_Login/input_Description_p-inputtext p-component p_f9ed0f' is clicked on
+
+14-11-2025T11:22:57 - [MESSAGE][WARNING] - Waiting for element timed out
+
+14-11-2025T11:22:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/input_Description_p-inputtext p-component p_f9ed0f' is clicked on
+
+14-11-2025T11:22:57 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Login/input_Description_p-inputtext p-component p_f9ed0f"), "<h1 class="home__title">Hi,<br>I'am&#160;<font color="#d72d2d">Duy</font><br>Full Stack Developer</h1>"): Text '<h1 class="home__title">Hi,<br>I'am&#160;<font color="#d72d2d">Duy</font><br>Full Stack Developer</h1>' is set on object 'Object Repository/Page_Login/input_Description_p-inputtext p-component p_f9ed0f'
+
+14-11-2025T11:23:10 - [MESSAGE][PASSED] - Text '<h1 class="home__title">Hi,<br>I'am&#160;<font color="#d72d2d">Duy</font><br>Full Stack Developer</h1>' is set on object 'Object Repository/Page_Login/input_Description_p-inputtext p-component p_f9ed0f'
+
+14-11-2025T11:23:10 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Login/input_Slogan_calendar"), "11/10/1999"): Text '11/10/1999' is set on object 'Object Repository/Page_Login/input_Slogan_calendar'
+
+14-11-2025T11:23:24 - [MESSAGE][WARNING] - Waiting for element timed out
+
+14-11-2025T11:23:28 - [MESSAGE][WARNING] - Waiting for element timed out
+
+14-11-2025T11:23:29 - [MESSAGE][PASSED] - Text '11/10/1999' is set on object 'Object Repository/Page_Login/input_Slogan_calendar'
+
+14-11-2025T11:23:29 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Login/input_Birth day_p-inputtext p-component p-e_b43973"), "038****706"): Text '038****706' is set on object 'Object Repository/Page_Login/input_Birth day_p-inputtext p-component p-e_b43973'
+
+14-11-2025T11:23:33 - [MESSAGE][PASSED] - Text '038****706' is set on object 'Object Repository/Page_Login/input_Birth day_p-inputtext p-component p-e_b43973'
+
+14-11-2025T11:23:33 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Login/input_Phone number_p-inputtext p-component _c71f92"), "Ninh Bình"): Text 'Ninh Bình' is set on object 'Object Repository/Page_Login/input_Phone number_p-inputtext p-component _c71f92'
+
+14-11-2025T11:23:34 - [MESSAGE][PASSED] - Text 'Ninh Bình' is set on object 'Object Repository/Page_Login/input_Phone number_p-inputtext p-component _c71f92'
+
+14-11-2025T11:23:34 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Login/input_City, Province_p-inputtext p-componen_057006"), "Kim Sơn"): Text 'Kim Sơn' is set on object 'Object Repository/Page_Login/input_City, Province_p-inputtext p-componen_057006'
+
+14-11-2025T11:23:35 - [MESSAGE][PASSED] - Text 'Kim Sơn' is set on object 'Object Repository/Page_Login/input_City, Province_p-inputtext p-componen_057006'
+
+14-11-2025T11:23:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Login/div_Setting_main-panel_1")): Object: 'Object Repository/Page_Login/div_Setting_main-panel_1' is clicked on
+
+14-11-2025T11:23:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/div_Setting_main-panel_1' is clicked on
+
+14-11-2025T11:23:37 - [TEST_STEP][PASSED] - mycv.MyCVKeywords.finalTestCase(): mycv.MyCVKeywords.finalTestCase is PASSED
+
+14-11-2025T11:23:37 - [MESSAGE][PASSED] - mycv.MyCVKeywords.finalTestCase is PASSED
+
+14-11-2025T11:23:37 - [TEST_STEP][PASSED] - Start tear down : onFailure: Method 'onFailure' complete successfully
+
+14-11-2025T11:23:37 - [MESSAGE][PASSED] - Method 'onFailure' complete successfully
+
+14-11-2025T11:23:37 - [TEST_STEP][PASSED] - Start listener action : afterTestCase: null
+
+14-11-2025T11:23:37 - [TEST_STEP][PASSED] - println(<== Kết thúc test case: $testCaseContext.getTestCaseId()): null
+
+14-11-2025T11:23:37 - [TEST_STEP][PASSED] - println(Kết quả: $testCaseContext.getTestCaseStatus()): null
+
+14-11-2025T11:23:37 - [TEST_STEP][PASSED] - if (testCaseContext.getTestCaseStatus() == "FAILED"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[14-11-2025T11:20:02 - [TEST_STEP][PASSED] - Start listener action : beforeTestSuite: null
+
+14-11-2025T11:20:02 - [TEST_STEP][PASSED] - println(=== Bắt đầu suite: $testSuiteContext.getTestSuiteId() ===): null
+
+14-11-2025T11:20:01 - [TEST_SUITE][PASSED] - TS - Fill data profile: null
+
+14-11-2025T11:23:37 - [TEST_STEP][PASSED] - Start listener action : afterTestSuite: null
+
+14-11-2025T11:23:37 - [TEST_STEP][PASSED] - println(=== Kết thúc suite: $testSuiteContext.getTestSuiteId() ===): null]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

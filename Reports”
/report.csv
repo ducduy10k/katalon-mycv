@@ -1,0 +1,24 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS - Fill data profile,Chrome 142.0.7444.162,,,14-11-2025 11:20:01,14-11-2025 11:23:37,"3m - 35,884s",PASSED
+,,,,,,,
+Start listener action : beforeTestSuite,Chrome 142.0.7444.162,,,14-11-2025 11:20:02,14-11-2025 11:20:02,"0,073s",PASSED
+,,,,,,,
+Test Cases/Fill data profile,Chrome 142.0.7444.162,,,14-11-2025 11:21:01,14-11-2025 11:23:37,"2m - 35,800s",PASSED
+Start listener action : beforeTestCase,Chrome 142.0.7444.162,,,14-11-2025 11:21:01,14-11-2025 11:21:01,"0,005s",PASSED
+"openBrowser("""")",Chrome 142.0.7444.162,,,14-11-2025 11:21:01,14-11-2025 11:21:05,"3,651s",PASSED
+"mycv.MyCVKeywords.AppLogin(""test@yopmail.com"", ""RigbBhfdqOBGNlJIWM1ClA=="")",Chrome 142.0.7444.162,,,14-11-2025 11:21:05,14-11-2025 11:21:55,"50,013s",PASSED
+"setText(findTestObject(""Object Repository/Page_Login/input_Profile_p-inputtext p-component p-ele_2ea6b0""), ""Duy"")",Chrome 142.0.7444.162,,,14-11-2025 11:21:55,14-11-2025 11:22:03,"8,161s",PASSED
+"click(findTestObject(""Object Repository/Page_Login/input_First name_p-inputtext p-component p-_c00827""))",Chrome 142.0.7444.162,,,14-11-2025 11:22:03,14-11-2025 11:22:05,"1,679s",PASSED
+"setText(findTestObject(""Object Repository/Page_Login/input_First name_p-inputtext p-component p-_c00827""), ""Nguyễn "")",Chrome 142.0.7444.162,,,14-11-2025 11:22:05,14-11-2025 11:22:38,"32,904s",PASSED
+"click(findTestObject(""Object Repository/Page_Login/input_Description_p-inputtext p-component p_f9ed0f""))",Chrome 142.0.7444.162,,,14-11-2025 11:22:38,14-11-2025 11:22:57,"19,543s",PASSED
+"setText(findTestObject(""Object Repository/Page_Login/input_Description_p-inputtext p-component p_f9ed0f""), ""<h1 class=""home__title"">Hi,<br>I'am&#160;<font color=""#d72d2d"">Duy</font><br>Full Stack Developer</h1>"")",Chrome 142.0.7444.162,,,14-11-2025 11:22:57,14-11-2025 11:23:10,"13,015s",PASSED
+"setText(findTestObject(""Object Repository/Page_Login/input_Slogan_calendar""), ""11/10/1999"")",Chrome 142.0.7444.162,,,14-11-2025 11:23:10,14-11-2025 11:23:29,"19,090s",PASSED
+"setText(findTestObject(""Object Repository/Page_Login/input_Birth day_p-inputtext p-component p-e_b43973""), ""038****706"")",Chrome 142.0.7444.162,,,14-11-2025 11:23:29,14-11-2025 11:23:33,"3,888s",PASSED
+"setText(findTestObject(""Object Repository/Page_Login/input_Phone number_p-inputtext p-component _c71f92""), ""Ninh Bình"")",Chrome 142.0.7444.162,,,14-11-2025 11:23:33,14-11-2025 11:23:34,"1,154s",PASSED
+"setText(findTestObject(""Object Repository/Page_Login/input_City, Province_p-inputtext p-componen_057006""), ""Kim Sơn"")",Chrome 142.0.7444.162,,,14-11-2025 11:23:34,14-11-2025 11:23:35,"1,149s",PASSED
+"click(findTestObject(""Object Repository/Page_Login/div_Setting_main-panel_1""))",Chrome 142.0.7444.162,,,14-11-2025 11:23:35,14-11-2025 11:23:37,"1,499s",PASSED
+mycv.MyCVKeywords.finalTestCase(),Chrome 142.0.7444.162,,,14-11-2025 11:23:37,14-11-2025 11:23:37,"0,007s",PASSED
+Start tear down : onFailure,Chrome 142.0.7444.162,,,14-11-2025 11:23:37,14-11-2025 11:23:37,"0,004s",PASSED
+Start listener action : afterTestCase,Chrome 142.0.7444.162,,,14-11-2025 11:23:37,14-11-2025 11:23:37,"0,005s",PASSED
+,,,,,,,
+Start listener action : afterTestSuite,Chrome 142.0.7444.162,,,14-11-2025 11:23:37,14-11-2025 11:23:37,"0,003s",PASSED

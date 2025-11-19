@@ -1,24 +1,79 @@
-.gradle
+# =============================
+# macOS rác
+# =============================
+.DS_Store
+*/.DS_Store
 
-bin
+# =============================
+# Katalon Reports
+# =============================
+Reports/
+*/Reports/
+*.html
+*.log
 
-Reports
+# =============================
+# Katalon internal settings
+# =============================
+.settings/
+settings/
+.settings/**
+settings/**
+bin/
+Libs/
 
-Libs
+# Plugin cache
+Plugins/
+plugins/
 
-output
+# Temporary files
+*.tmp
+*.temp
+*.swp
 
-!output/.gitkeep
-build
+# =============================
+# Katalon Generated Files
+# =============================
+*.classpath
+*.project
+*.properties
+*.iml
 
-.classpath
+# =============================
+# Object Repository Generated Files (ẩn .DS_Store)
+# =============================
+Object\ Repository/.DS_Store
 
-.project
+# =============================
+# Profiles (giữ lại default, ignore local/prod)
+# =============================
+Profiles/local.glbl
+Profiles/prod.glbl
 
-.cache
-/bin/
-/Libs/
-/.settings/
-/.classpath
-.svn/
-.cache/
+# Nếu bạn muốn ignore toàn bộ profiles khác default
+# Profiles/*.glbl
+# !Profiles/default.glbl
+
+# =============================
+# Test Suite & Listener cache
+# =============================
+Test\ Listeners/*.tmp
+Test\ Listeners/*.log
+
+# =============================
+# Build cache/report folders khác
+# =============================
+.gradle/
+build/
+out/
+
+# =============================
+# Katalon Mobile Settings file auto-generated
+# =============================
+settings/internal/com.kms.katalon.composer.mobile.settings.properties
+
+# =============================
+# Windows weird encoding temp files
+# =============================
+Reports??/
+Reports\342\200\235\n/

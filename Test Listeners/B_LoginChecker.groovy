@@ -1,4 +1,3 @@
-import com.kms.katalon.core.webui.driver.DriverFactory
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -22,38 +21,42 @@ import com.kms.katalon.core.annotation.AfterTestCase
 import com.kms.katalon.core.annotation.AfterTestSuite
 import com.kms.katalon.core.context.TestCaseContext
 import com.kms.katalon.core.context.TestSuiteContext
+import com.kms.katalon.core.webui.driver.DriverFactory
 
-class CommonListener {
+class B_LoginChecker {
 	@BeforeTestCase
-	def beforeTestCase(TestCaseContext testCaseContext) {
-		println "==> Bắt đầu test case: ${testCaseContext.getTestCaseId()}"
+	def checkLogin(TestCaseContext testCaseContext) {
+		println("✔ Check login")
+		
+		  def driver = null
+        try {
+            driver = DriverFactory.getWebDriver()
+        } catch (Exception e) {
+            driver = null
+        }
+
+        if (driver == null) {
+            println("⚠ Browser chưa mở → mở browser")
+            WebUI.openBrowser('')
+            WebUI.navigateToUrl(GlobalVariable.G_base_url)
+			WebUI.waitForPageLoad(20)
+        }
+		
+		CustomKeywords.'mycv.MyCVKeywords.LoginIfUserdataNotExist'(GlobalVariable.G_user_name, GlobalVariable.G_password)
 	}
 
 	@AfterTestCase
 	def afterTestCase(TestCaseContext testCaseContext) {
-		println "<== Kết thúc test case: ${testCaseContext.getTestCaseId()}"
-		println "Kết quả: ${testCaseContext.getTestCaseStatus()}"
-		if (testCaseContext.getTestCaseStatus() == 'FAILED') {
-	        try {
-	            if (DriverFactory.getWebDriver() != null) {
-					println "takeScreenshot"
-	                WebUI.takeScreenshot("Screenshots/${testCaseContext.getTestCaseId()}_FAILED.png")
-	            } else {
-	                println "⚠️ Browser đã đóng — bỏ qua bước chụp ảnh."
-	            }
-	        } catch (Exception e) {
-	            println "❌ Không thể chụp ảnh lỗi: ${e.message}"
-	        }
-		}
+		
 	}
 
 	@BeforeTestSuite
 	def beforeTestSuite(TestSuiteContext testSuiteContext) {
-		println "=== Bắt đầu suite: ${testSuiteContext.getTestSuiteId()} ==="
+		
 	}
 
 	@AfterTestSuite
 	def afterTestSuite(TestSuiteContext testSuiteContext) {
-		println "=== Kết thúc suite: ${testSuiteContext.getTestSuiteId()} ==="
+		
 	}
 }

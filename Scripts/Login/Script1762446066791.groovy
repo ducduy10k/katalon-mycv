@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://devduynd.web.app/')
+WebUI.navigateToUrl(GlobalVariable.G_base_url)
 
 WebUI.click(findTestObject('Object Repository/Page_MyCV - Home/div_Contact_nav__login-logout'))
 
