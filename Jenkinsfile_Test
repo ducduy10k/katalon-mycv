@@ -1,0 +1,45 @@
+pipeline {
+    agent any
+    stages {
+        stage('Checkout') {
+            steps {
+                echo 'Checkout source code from GitHub...'
+                checkout([$class: 'GitSCM',
+                    branches: [[name: '*/master']],
+                    userRemoteConfigs: [[url: 'https://github.com/ducduy10k/katalon-mycv.git']]
+                ])
+            }
+        }
+
+        stage('Run Katalon Tests (Docker)') {
+            steps {
+                echo "Running Katalon Test Suite using Docker container..."
+                sh """
+                    "/Users/maidt11/tools/katalon_engine/Katalon_Studio_Engine_MacOS_Arm64-10.4.0/Katalon Studio Engine.app/Contents/MacOS/katalonc" \
+                    -runMode=console \
+                    -projectPath="/var/jenkins_home/workspace/test_01_demo_katalon/demo_cicd_katalon.prj" \
+                    -testSuitePath="Test Suites/TS_demo_01" \
+                    -browserType="Chrome" \
+                    -reportFolder="Reports"
+                    """
+            }
+        }
+
+
+        stage('Archive Reports') {
+            steps {
+                echo 'Archiving test reports...'
+                archiveArtifacts artifacts: 'Reports/**/*', fingerprint: true
+            }
+        }
+    }
+
+    post {
+        failure {
+            echo 'Katalon tests failed!'
+        }
+        success {
+            echo 'Katalon tests succeeded!'
+        }
+    }
+}
