@@ -25,4 +25,11 @@
       <protected>true</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'9cf33e51-2a26-47c8-92b8-d350f05a6c28'</initValue>
+      <name>G_userIdDefault</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

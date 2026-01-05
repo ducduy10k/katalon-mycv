@@ -23,6 +23,9 @@ import com.kms.katalon.core.util.KeywordUtil
 
 import internal.GlobalVariable
 
+import utils.UrlUtils
+import utils.LocalStorageUtils
+
 public class MyCVKeywords {
 
 	@Keyword
@@ -59,6 +62,11 @@ public class MyCVKeywords {
 		} else {
 			println("✔ Đã login (localStorage có token) → bỏ qua login")
 		}
+	}
+
+	@Keyword
+	String getCurrentUserId() {
+		return UrlUtils.getQueryParam('id') ?: LocalStorageUtils.getUserIdFromLocalStorage() ?: GlobalVariable.G_userIdDefault
 	}
 
 	@Keyword

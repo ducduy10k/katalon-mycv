@@ -6,7 +6,7 @@
    <UUID>9354702c-c188-4069-8f97-601c6ffd76cc</UUID>
    <createdEdition>ENTERPRISE</createdEdition>
    <createdVersion>10.4.1</createdVersion>
-   <freeLicense>false</freeLicense>
+   <freeLicense>true</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
    <modifiedEdition>FREE</modifiedEdition>
    <modifiedVersion>10.2.2</modifiedVersion>
