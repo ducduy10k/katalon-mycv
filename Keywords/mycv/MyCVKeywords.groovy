@@ -30,20 +30,26 @@ public class MyCVKeywords {
 
 	@Keyword
 	def AppLogin (String userName, String password) {
-		WebUI.navigateToUrl('https://devduynd.web.app/auth/login')
+		WebUI.navigateToUrl(GlobalVariable.G_base_url + '/auth/login')
 
-		WebUI.waitForPageLoad(20)
+		WebUI.waitForElementVisible(findTestObject('Common/Login/titleLogin'), 30)
 
-		WebUI.setText(findTestObject('Object Repository/Page_Login/input_Email_email'), userName)
+		// Nhập email
+		WebUI.setText(findTestObject('Common/Login/inputEmail'), GlobalVariable.G_user_name)
 
-		WebUI.setEncryptedText(findTestObject('Object Repository/Page_Login/input_Password_password'), password)
+		// Nhập password
+		WebUI.setEncryptedText(findTestObject('Common/Login/inputPassword'), GlobalVariable.G_password)
 
-		WebUI.click(findTestObject('Object Repository/Page_Login/button_Forgot your password_btn bg-blue-400_bf5a24'))
+		// Đợi nút Sign in clickable
+		WebUI.waitForElementClickable(findTestObject('Common/Login/btnSignIn'), 30)
 
-		boolean isPresent = WebUI.waitForElementPresent(findTestObject('Page_Login/div_Setting_w-100'), 10)
+		// Click login
+		WebUI.click(findTestObject('Common/Login/btnSignIn'))
+
+		boolean isPresent = WebUI.waitForElementPresent(findTestObject('Editor/ProfileScreen/titleProfile'), 300)
 
 		if (!isPresent) {
-			WebUI.comment("Element div_Setting_w-100 KHÔNG xuất hiện trong 10s")
+			WebUI.comment("Title profile KHÔNG xuất hiện trong 300")
 			KeywordUtil.markFailed("❌ FAIL: Không tìm thấy element Setting trên màn hình Login")
 		}
 	}
