@@ -43,8 +43,8 @@ class BrowserListener {
 	
 	@AfterTestCase
 	def closeIfSingleRun() {
-		if (RunConfiguration.getExecutionSource() == 'Test Case') {
-			WebUI.closeBrowser()
+		if (RunConfiguration.getExecutionSource().contains('Test Case')) {
+		    WebUI.closeBrowser()
 		}
 	}
 	

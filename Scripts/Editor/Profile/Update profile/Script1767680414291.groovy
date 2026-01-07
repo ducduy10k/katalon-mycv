@@ -19,7 +19,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
-def data = TestDataFactory.findTestData('Profile/ProfileData')
+def data = TestDataFactory.findTestData('ProfileData')
 
 // Lấy dòng 1
 String firstName = data.getValue('firstName', 1)
