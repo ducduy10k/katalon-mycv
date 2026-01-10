@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCRN01 - Xem MH Education</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>80a35fe2-a4da-413c-bf10-c8d8be395e18</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3e0372d1-f209-4940-9c37-2f8ac9a76e8e</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f5893328-29de-4793-bf65-438f9c1e25be</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c566273d-99cf-4345-881b-216795962f20</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f18b7072-e091-46a0-8979-439bbf5e221d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'UNIVERSITY OF TRANSPORT AND COMMUNICATIONS'</defaultValue>
+      <description></description>
+      <id>3e0372d1-f209-4940-9c37-2f8ac9a76e8e</id>
+      <masked>false</masked>
+      <name>university</name>
+   </variable>
+   <variable>
+      <defaultValue>'Major: Information Technology'</defaultValue>
+      <description></description>
+      <id>f5893328-29de-4793-bf65-438f9c1e25be</id>
+      <masked>false</masked>
+      <name>major</name>
+   </variable>
+   <variable>
+      <defaultValue>'2017 — 2021'</defaultValue>
+      <description></description>
+      <id>c566273d-99cf-4345-881b-216795962f20</id>
+      <masked>false</masked>
+      <name>period</name>
+   </variable>
+   <variable>
+      <defaultValue>'3.0 / 4'</defaultValue>
+      <description></description>
+      <id>f18b7072-e091-46a0-8979-439bbf5e221d</id>
+      <masked>false</masked>
+      <name>gpa</name>
+   </variable>
+</TestCaseEntity>

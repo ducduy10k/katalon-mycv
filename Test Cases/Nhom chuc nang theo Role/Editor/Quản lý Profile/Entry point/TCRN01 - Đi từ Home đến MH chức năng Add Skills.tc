@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCRN01 - Đi từ Home đến MH chức năng Add Skills</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>06d0878d-cfe6-4076-aa4c-ec65a18f8d10</testCaseGuid>
+</TestCaseEntity>

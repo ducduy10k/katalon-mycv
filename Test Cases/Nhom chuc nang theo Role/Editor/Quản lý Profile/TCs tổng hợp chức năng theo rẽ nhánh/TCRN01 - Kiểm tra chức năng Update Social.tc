@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCRN01 - Kiểm tra chức năng Update Social</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6c164fc4-a952-432a-8175-d06955fb1cdc</testCaseGuid>
+</TestCaseEntity>
