@@ -17,6 +17,34 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 
 
+// 1. Open browser
+// 2. Get current userId (dynamic)
+def userId = CustomKeywords.'mycv.MyCVKeywords.getCurrentUserId'()
+
+println("UserId: $userId")
+
+// 3. Call API get profile
+def response = WS.sendRequest(findTestObject('APIs/get_profile', [('id') : userId]))
+
+// 4. Parse JSON response
+def json = new JsonSlurper().parseText(response.getResponseText())
+
+def phoneFromAPI = json.phoneNumber
+
+def emailFromAPI = json.email
+
+def birthDayFromAPI = json.birthDay // timestamp (ms)
+
+// 5. Convert birthday giống FE (dd/MM/yyyy)
+def birthdayText = new Date(birthDayFromAPI).format('dd/MM/yyyy')
+
+// Debug log
+println("Phone API    : $phoneFromAPI")
+
+println("Email API    : $emailFromAPI")
+
+println("Birthday API : $birthdayText")
+
 // 6. Verify UI vs API
 WebUI.verifyElementText(findTestObject('Viewer/ProfileView/phoneValue'), phoneFromAPI)
 
