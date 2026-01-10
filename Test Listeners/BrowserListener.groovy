@@ -31,11 +31,11 @@ class BrowserListener {
 	def openIfNotExist() {
 		try {
 			if (DriverFactory.getWebDriver() == null) {
-				WebUI.openBrowser(GlobalVariable.G_base_url)
+				WebUI.openBrowser("")
 				WebUI.maximizeWindow()
 			}
 		} catch (e) {
-			WebUI.openBrowser(GlobalVariable.G_base_url)
+			WebUI.openBrowser("")
 			WebUI.maximizeWindow()
 		}
 		

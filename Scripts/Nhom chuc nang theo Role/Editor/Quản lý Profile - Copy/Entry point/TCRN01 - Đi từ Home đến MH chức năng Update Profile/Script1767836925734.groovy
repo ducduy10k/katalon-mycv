@@ -17,9 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.navigateToUrl('https://devduynd.web.app/#home', FailureHandling.STOP_ON_FAILURE)
+//Precondition
+CustomKeywords.'mycv.MyCVKeywords.LoginIfUserdataNotExist'('', '')
 
-WebUI.waitForElementVisible(findTestObject('Viewer/HeaderNavbar/homeNav'), 10)
-
-WebUI.click(findTestObject('Viewer/HeaderNavbar/homeNav'))
-
+WebUI.waitForElementVisible(findTestObject('Editor/ProfileScreen/inputFirstName'), 30)

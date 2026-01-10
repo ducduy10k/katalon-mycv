@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TCRN01 - Section Skill tại MH Home</name>
+   <name>Kiểm tra chức năng Update Profile</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>0399399f-b170-45c5-b546-a8587c0ac29b</testCaseGuid>
+   <testCaseGuid>2f4e8439-2c74-4ecb-883d-db0bf60ff41c</testCaseGuid>
 </TestCaseEntity>

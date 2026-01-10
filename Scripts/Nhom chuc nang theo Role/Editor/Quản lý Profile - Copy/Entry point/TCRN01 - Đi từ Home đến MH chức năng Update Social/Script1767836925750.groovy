@@ -17,9 +17,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.navigateToUrl('https://devduynd.web.app/#home', FailureHandling.STOP_ON_FAILURE)
+// 1. Verify sidebar hiển thị
+CustomKeywords.'mycv.MyCVKeywords.LoginIfUserdataNotExist'('', '')
 
-WebUI.waitForElementVisible(findTestObject('Viewer/HeaderNavbar/homeNav'), 10)
+String currentUrl = WebUI.getUrl()
 
-WebUI.click(findTestObject('Viewer/HeaderNavbar/homeNav'))
+if (!(currentUrl.contains('/builder/social'))) {
+	WebUI.navigateToUrl(GlobalVariable.G_base_url + '/builder/social')
+}
 
+WebUI.waitForPageLoad(30)
+
+WebUI.delay(20)
+
+// ===== 2. Wait màn Social =====
+WebUI.waitForElementVisible(findTestObject('Editor/Social/titleSocial'), 30)

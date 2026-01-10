@@ -19,13 +19,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0f99017f-c7a6-4a1b-b6aa-9ba72eca64a4</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Nhom chuc nang theo Role/Editor/Quản lý Profile/TCs tổng hợp chức năng theo rẽ nhánh/TCRN01 - Kiểm tra chức năng Add Skills</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>a945d39a-3040-4bb1-a9c9-9436e72feaec</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

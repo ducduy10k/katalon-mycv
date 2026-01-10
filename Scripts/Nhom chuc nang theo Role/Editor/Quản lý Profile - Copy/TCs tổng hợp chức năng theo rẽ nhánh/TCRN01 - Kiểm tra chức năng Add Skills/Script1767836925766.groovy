@@ -20,6 +20,6 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('Nhom chuc nang theo Role/Editor/Quản lý Profile/Entry point/TCRN01 - Đi từ Home đến MH chức năng Add Skills'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Nhom chuc nang theo Role/Editor/Quản lý Profile/Kiểm tra chức năng/Kiểm tra chức năng Add Skills'), 
+WebUI.callTestCase(findTestCase('null'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 

@@ -21,6 +21,5 @@ WebUI.callTestCase(findTestCase('Nhom chuc nang theo Role/Viewer/Xem Profile/Ent
     [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Test Cases/Nhom chuc nang theo Role/Viewer/Xem Profile/Kiểm tra chức năng/Kiểm tra chức năng View education'), 
-    [('university') : university, ('major') : major, ('period') : period
-        , ('gpa') : gpa], FailureHandling.STOP_ON_FAILURE)
+    [('university') : university, ('major') : major, ('period') : period, ('gpa') : gpa], FailureHandling.STOP_ON_FAILURE)
 

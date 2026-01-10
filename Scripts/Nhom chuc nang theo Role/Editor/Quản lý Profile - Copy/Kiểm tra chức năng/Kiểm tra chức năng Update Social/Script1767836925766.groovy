@@ -16,10 +16,46 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
-WebUI.navigateToUrl('https://devduynd.web.app/#home', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Viewer/HeaderNavbar/homeNav'), 10)
+// ===== 3. Load test data =====
+def data = TestDataFactory.findTestData('SocialData')
 
-WebUI.click(findTestObject('Viewer/HeaderNavbar/homeNav'))
+String facebook = data.getValue('facebook', 1)
+
+String youtube = data.getValue('youtube', 1)
+
+String gmail = data.getValue('gmail', 1)
+
+String skype = data.getValue('skype', 1)
+
+println(facebook)
+
+
+// ===== 4. Nhập dữ liệu =====
+WebUI.clearText(findTestObject('Editor/Social/inputFacebook'))
+
+WebUI.setText(findTestObject('Editor/Social/inputFacebook'), facebook)
+
+WebUI.clearText(findTestObject('Editor/Social/inputYoutube'))
+
+WebUI.setText(findTestObject('Editor/Social/inputYoutube'), youtube)
+
+WebUI.clearText(findTestObject('Editor/Social/inputGmail'))
+
+WebUI.setText(findTestObject('Editor/Social/inputGmail'), gmail)
+
+WebUI.clearText(findTestObject('Editor/Social/inputSkype'))
+
+WebUI.setText(findTestObject('Editor/Social/inputSkype'), skype)
+
+// ===== 5. Click Update =====
+WebUI.click(findTestObject('Editor/Social/btnUpdate'))
+
+// ===== 6. Verify (basic) =====
+WebUI.delay(2)
+
+// Option 1: verify value vẫn giữ
+WebUI.verifyElementAttributeValue(findTestObject('Editor/Social/inputSkype'), 'value', skype, 10)
 

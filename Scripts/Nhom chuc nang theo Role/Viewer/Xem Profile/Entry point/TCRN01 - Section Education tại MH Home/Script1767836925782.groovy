@@ -17,6 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-userId = CustomKeywords.'mycv.MyCVKeywords.getCurrentUserId'()
+WebUI.navigateToUrl('https://devduynd.web.app/#education', FailureHandling.STOP_ON_FAILURE)
 
-println("UserId: $userId")
+WebUI.waitForElementVisible(findTestObject('Viewer/HeaderNavbar/educationNav'), 10)
+
+WebUI.click(findTestObject('Viewer/HeaderNavbar/educationNav'))
+

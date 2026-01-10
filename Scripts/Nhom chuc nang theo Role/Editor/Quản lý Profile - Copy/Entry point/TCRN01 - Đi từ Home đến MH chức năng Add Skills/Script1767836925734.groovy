@@ -17,9 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.navigateToUrl('https://devduynd.web.app/#home', FailureHandling.STOP_ON_FAILURE)
+// ===== PRE-CONDITION =====
+CustomKeywords.'mycv.MyCVKeywords.LoginIfUserdataNotExist'('', '')
 
-WebUI.waitForElementVisible(findTestObject('Viewer/HeaderNavbar/homeNav'), 10)
+String currentUrl = WebUI.getUrl()
 
-WebUI.click(findTestObject('Viewer/HeaderNavbar/homeNav'))
+if (!(currentUrl.contains('/builder/skill'))) {
+	WebUI.navigateToUrl(GlobalVariable.G_base_url + '/builder/skill')
+}
 
+WebUI.waitForPageLoad(30)
+
+// Click New
+WebUI.waitForElementClickable(findTestObject('Editor/Skill/btnNewSkill'), 10)
+
+WebUI.click(findTestObject('Editor/Skill/btnNewSkill'))
+
+// Wait popup
+WebUI.waitForElementVisible(findTestObject('Editor/Skill/AddSkill/popupAddSkill'), 10)
