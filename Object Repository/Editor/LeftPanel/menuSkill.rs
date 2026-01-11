@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btnNewSkill</name>
+   <name>menuSkill</name>
    <tag></tag>
-   <elementGuidId>2688dae5-3863-4368-a48c-90b8292c9b65</elementGuidId>
+   <elementGuidId>46d89418-e3ca-4bb1-9475-f86920d90d3a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@test_id='builder-skill-new-btn']
-</value>
+         <value>//a[@test_id='menu-panel-node-link-0-3']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

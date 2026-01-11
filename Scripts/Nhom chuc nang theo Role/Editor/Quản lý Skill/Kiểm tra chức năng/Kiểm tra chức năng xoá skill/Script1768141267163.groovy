@@ -17,9 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Nhom chuc nang theo Role/Editor/Quản lý Profile/Entry point/TCRN01 - Đi từ Home đến MH chức năng quản lý thông tin Profile - Chưa login'), 
-    [:], FailureHandling.STOP_ON_FAILURE)
+int index = 0
 
-WebUI.callTestCase(findTestCase('Nhom chuc nang theo Role/Editor/Quản lý Profile/Kiểm tra chức năng/Kiểm tra chức năng Update Profile'), 
-    [:], FailureHandling.STOP_ON_FAILURE)
+def deleteIcon = findTestObject('Editor/Skill/DeleteSkill/DeleteByIndex', [('index') : index])
+
+WebUI.waitForElementVisible(deleteIcon, 10)
+
+WebUI.click(deleteIcon)
+
+WebUI.waitForElementVisible(findTestObject('Editor/Skill/DeleteSkill/btnConfirmYes'), 0)
+
+WebUI.click(findTestObject('Editor/Skill/DeleteSkill/btnConfirmYes'))
+
+WebUI.delay(5)
 

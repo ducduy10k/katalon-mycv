@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TCRN01 - Đi từ Home đến MH chức năng Update Social</name>
+   <name>TCRN01 - Đi từ Home đến MH chức năng quản lý thông tin Profile - Chưa login</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>fcc854a9-fd4e-4f15-8cce-52b49c6f2413</testCaseGuid>
+   <testCaseGuid>3b0b58c9-3ad0-424e-b6e5-f44f19e5a899</testCaseGuid>
 </TestCaseEntity>

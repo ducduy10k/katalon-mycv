@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btnNewSkill</name>
+   <name>btnConfirmYes</name>
    <tag></tag>
-   <elementGuidId>2688dae5-3863-4368-a48c-90b8292c9b65</elementGuidId>
+   <elementGuidId>03961736-9cc0-44ba-bdaa-4a1aa99b77fa</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@test_id='builder-skill-new-btn']
+         <value>//div[contains(@class,'p-confirmdialog')]//button[contains(@class,'p-confirmdialog-accept-button')]
 </value>
       </entry>
    </selectorCollection>

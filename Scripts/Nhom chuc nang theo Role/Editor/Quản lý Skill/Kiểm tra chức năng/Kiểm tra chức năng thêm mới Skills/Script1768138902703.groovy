@@ -16,10 +16,42 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
-WebUI.callTestCase(findTestCase('Nhom chuc nang theo Role/Editor/Quản lý Profile/Entry point/TCRN01 - Đi từ Home đến MH chức năng quản lý thông tin Profile - Chưa login'), 
-    [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForElementClickable(findTestObject('Editor/Skill/btnNewSkill'), 10)
 
-WebUI.callTestCase(findTestCase('Nhom chuc nang theo Role/Editor/Quản lý Profile/Kiểm tra chức năng/Kiểm tra chức năng Update Profile'), 
-    [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Editor/Skill/btnNewSkill'))
+
+// Wait popup
+WebUI.waitForElementVisible(findTestObject('Editor/Skill/AddSkill/popupAddSkill'), 10)
+
+def data = TestDataFactory.findTestData('AddSkillData')
+
+// Lấy dòng 1
+String icon = data.getValue('icon', 1)
+
+String name = data.getValue('name', 1)
+
+String percentage = data.getValue('percentage', 1)
+
+// DEBUG
+println('icon = ' + icon)
+
+// Name
+WebUI.clearText(findTestObject('Editor/Skill/AddSkill/inputSkillName'))
+
+WebUI.setText(findTestObject('Editor/Skill/AddSkill/inputSkillName'), name)
+
+// Percentage
+WebUI.clearText(findTestObject('Editor/Skill/AddSkill/inputPercentage'))
+
+WebUI.setText(findTestObject('Editor/Skill/AddSkill/inputPercentage'), percentage)
+
+// Icon
+WebUI.clearText(findTestObject('Editor/Skill/AddSkill/inputIcon'))
+
+WebUI.setText(findTestObject('Editor/Skill/AddSkill/inputIcon'), icon)
+
+// Submit
+WebUI.click(findTestObject('Editor/Skill/AddSkill/btnSubmitNewSkill'))
 

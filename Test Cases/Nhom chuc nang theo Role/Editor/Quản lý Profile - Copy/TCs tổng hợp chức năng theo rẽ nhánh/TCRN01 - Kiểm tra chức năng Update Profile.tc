@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TCRN01 - Kiểm tra chức năng Update Profile</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>eb856a8b-5462-4307-aa72-18decf638c50</testCaseGuid>
-</TestCaseEntity>

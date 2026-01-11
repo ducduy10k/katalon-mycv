@@ -17,9 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Nhom chuc nang theo Role/Editor/Quản lý Profile/Entry point/TCRN01 - Đi từ Home đến MH chức năng quản lý thông tin Profile - Chưa login'), 
+WebUI.callTestCase(findTestCase('Nhom chuc nang theo Role/Editor/Quản lý Skill/Entry point/TCRN01 - Đi từ Home đến MH chức năng quản lý Skills'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Nhom chuc nang theo Role/Editor/Quản lý Profile/Kiểm tra chức năng/Kiểm tra chức năng Update Profile'), 
+WebUI.callTestCase(findTestCase('Nhom chuc nang theo Role/Editor/Quản lý Skill/Kiểm tra chức năng/Kiểm tra chức năng xoá skill'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 

@@ -6,13 +6,12 @@
    <elementGuidId>82156a43-e303-4793-8ba3-ef3e75fc3375</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//label[.//span[text()='First name']]//input
-</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//input[@test_id='my-info-first-name-input']
+</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

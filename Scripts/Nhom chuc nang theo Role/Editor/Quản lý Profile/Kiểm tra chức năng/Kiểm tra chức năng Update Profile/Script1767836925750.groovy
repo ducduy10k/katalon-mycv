@@ -1,5 +1,4 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -23,15 +22,23 @@ def data = TestDataFactory.findTestData('ProfileData')
 
 // Lấy dòng 1
 String firstName = data.getValue('firstName', 1)
-String lastName  = data.getValue('lastName', 1)
-String phone     = data.getValue('phone', 1)
-String birthDay  = data.getValue('birthDay', 1)
-String city      = data.getValue('city', 1)
-String address   = data.getValue('address', 1)
-String slogan    = data.getValue('slogan', 1)
+
+String lastName = data.getValue('lastName', 1)
+
+String phone = data.getValue('phone', 1)
+
+String birthDay = data.getValue('birthDay', 1)
+
+String city = data.getValue('city', 1)
+
+String address = data.getValue('address', 1)
+
+String slogan = data.getValue('slogan', 1)
 
 // DEBUG
-println "firstName = " + firstName
+println('firstName = ' + firstName)
+
+WebUI.waitForElementVisible(findTestObject('Editor/ProfileScreen/inputFirstName'), 10)
 
 // ===== INPUT DATA =====
 WebUI.clearText(findTestObject('Editor/ProfileScreen/inputFirstName'))
@@ -46,7 +53,17 @@ WebUI.clearText(findTestObject('Editor/ProfileScreen/inputPhone'))
 
 WebUI.setText(findTestObject('Editor/ProfileScreen/inputPhone'), phone)
 
-WebUI.clearText(findTestObject('Editor/ProfileScreen/inputBirthDay'))
+//WebUI.clearText(findTestObject('Editor/ProfileScreen/inputBirthDay'))
+//
+//WebUI.setText(findTestObject('Editor/ProfileScreen/inputBirthDay'), birthDay)
+
+def obj = findTestObject('Editor/ProfileScreen/inputBirthDay')
+
+WebUI.waitForElementVisible(obj, 10)
+WebUI.click(obj)
+
+WebUI.sendKeys(obj, Keys.chord(Keys.CONTROL, 'a'))
+WebUI.sendKeys(obj, Keys.chord(Keys.BACK_SPACE))
 
 WebUI.setText(findTestObject('Editor/ProfileScreen/inputBirthDay'), birthDay)
 

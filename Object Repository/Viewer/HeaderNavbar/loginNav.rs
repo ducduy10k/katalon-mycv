@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btnNewSkill</name>
+   <name>loginNav</name>
    <tag></tag>
-   <elementGuidId>2688dae5-3863-4368-a48c-90b8292c9b65</elementGuidId>
+   <elementGuidId>77ad3a21-1c9c-43d8-b1c2-07882123f5af</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@test_id='builder-skill-new-btn']
+         <value>//div[@test_id='header-login-desktop-link']
+
 </value>
       </entry>
    </selectorCollection>

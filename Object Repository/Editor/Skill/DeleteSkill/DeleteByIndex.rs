@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btnNewSkill</name>
+   <name>DeleteByIndex</name>
    <tag></tag>
-   <elementGuidId>2688dae5-3863-4368-a48c-90b8292c9b65</elementGuidId>
+   <elementGuidId>31d1746d-c36b-43a1-9995-d2c19e8f278f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@test_id='builder-skill-new-btn']
+         <value>//i[@test_id='builder-skill-item-delete-${index}']
 </value>
       </entry>
    </selectorCollection>
