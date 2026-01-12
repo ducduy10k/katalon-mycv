@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 // ===== PRE-CONDITION =====
-WebUI.navigateToUrl(GlobalVariable.G_base_url + '/auth/skill')
+WebUI.navigateToUrl(GlobalVariable.G_base_url + '/builder/skill')
 
 WebUI.waitForElementVisible(findTestObject('Editor/LeftPanel/menuSkill'), 10)
 

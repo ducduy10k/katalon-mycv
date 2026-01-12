@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 // ===== PRE-CONDITION =====
-WebUI.navigateToUrl(GlobalVariable.G_base_url + '/auth/social')
+WebUI.navigateToUrl(GlobalVariable.G_base_url + '/builder/social')
 
 WebUI.waitForElementVisible(findTestObject('Editor/LeftPanel/menuSkill'), 10)
 
