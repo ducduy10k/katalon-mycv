@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCRN02 - Kiểm tra chức năng xoá Skills</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>64f11a67-462e-424a-aefc-8b1b323f1081</testCaseGuid>
+</TestCaseEntity>

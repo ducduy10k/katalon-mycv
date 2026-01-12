@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCRN02 - Vào luôn màn hình Social với TH user đã login</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3fe01980-495f-41b0-aabf-b619edb90119</testCaseGuid>
+</TestCaseEntity>

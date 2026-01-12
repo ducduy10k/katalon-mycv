@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Nhóm chức năng Role Vỉewer</name>
+   <name>Nhóm chức năng Role Viewer</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -11,6 +11,13 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>5b9e9697-f96e-466f-b7cd-8af9b6ebd923</testSuiteGuid>
+   <testCaseLink>
+      <guid>54e8b4d4-74e1-44c6-8ea2-6db4b755b6ec</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Nhom chuc nang theo Role/Viewer/Xem Profile/TCs Tổng hợp chức năng theo rẽ nhánh/TCRN01 - Xem MH Profile</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
    <testCaseLink>
       <guid>2ed26580-0035-478c-9292-ecf8b97fa822</guid>
       <isReuseDriver>false</isReuseDriver>
@@ -41,13 +48,6 @@
          <value></value>
          <variableId>f18b7072-e091-46a0-8979-439bbf5e221d</variableId>
       </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>54e8b4d4-74e1-44c6-8ea2-6db4b755b6ec</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Nhom chuc nang theo Role/Viewer/Xem Profile/TCs Tổng hợp chức năng theo rẽ nhánh/TCRN01 - Xem MH Profile</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>ef12f140-9e2a-4da0-9bb1-e8164f1250f4</guid>

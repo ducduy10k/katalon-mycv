@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCRN02 - Kiểm tra chức năng Add Skills</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0394cc42-565d-4f74-82fc-33d0acb1747d</testCaseGuid>
+</TestCaseEntity>

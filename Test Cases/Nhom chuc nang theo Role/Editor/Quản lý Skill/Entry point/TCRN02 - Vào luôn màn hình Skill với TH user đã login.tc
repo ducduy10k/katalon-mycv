@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCRN02 - Vào luôn màn hình Skill với TH user đã login</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>06aa66bb-d89b-4957-9b93-67936f27b4e3</testCaseGuid>
+</TestCaseEntity>
