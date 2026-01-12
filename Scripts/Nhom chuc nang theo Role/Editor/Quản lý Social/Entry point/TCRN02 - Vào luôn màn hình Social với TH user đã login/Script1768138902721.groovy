@@ -17,10 +17,16 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-// ===== PRE-CONDITION =====
-WebUI.navigateToUrl(GlobalVariable.G_base_url + '/builder/social')
+String currentUrl = WebUI.getUrl()
 
-WebUI.waitForElementVisible(findTestObject('Editor/LeftPanel/menuSkill'), 10)
+if (!(currentUrl.contains('/builder/'))) {
+    WebUI.navigateToUrl(GlobalVariable.G_base_url + '/builder/social')
+} else {
+    WebUI.comment('Đã ở đúng URL, không cần navigate')
+	
+	WebUI.waitForElementVisible(findTestObject('Editor/LeftPanel/menuSocial'), 10)
+	
+	WebUI.click(findTestObject('Editor/LeftPanel/menuSocial'))
+}
 
-WebUI.click(findTestObject('Editor/LeftPanel/menuSkill'))
 
