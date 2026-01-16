@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Kiểm tra thông tin CV</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a36d1ef9-58c9-4743-a297-8dd56a1ce663</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>52157f5e-57ff-4981-b2e6-998c85569ad2</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a0a1ec51-17d0-4f2e-883b-23073b27e230</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1a25e91d-7b31-4654-91b5-7b7d2df20292</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c7e5492f-0140-43aa-9ed3-4ba221fd7331</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'UNIVERSITY OF TRANSPORT AND COMMUNICATIONS'</defaultValue>
+      <description></description>
+      <id>52157f5e-57ff-4981-b2e6-998c85569ad6</id>
+      <masked>false</masked>
+      <name>university</name>
+   </variable>
+   <variable>
+      <defaultValue>'Major: Information Technology'</defaultValue>
+      <description></description>
+      <id>a0a1ec51-17d0-4f2e-883b-23073b27e230</id>
+      <masked>false</masked>
+      <name>major</name>
+   </variable>
+   <variable>
+      <defaultValue>'2017 — 2021'</defaultValue>
+      <description></description>
+      <id>1a25e91d-7b31-4654-91b5-7b7d2df20292</id>
+      <masked>false</masked>
+      <name>period</name>
+   </variable>
+   <variable>
+      <defaultValue>'3.0 / 4'</defaultValue>
+      <description></description>
+      <id>c7e5492f-0140-43aa-9ed3-4ba221fd7331</id>
+      <masked>false</masked>
+      <name>gpa</name>
+   </variable>
+</TestCaseEntity>
