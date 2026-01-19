@@ -9,9 +9,9 @@
    <freeLicense>true</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
    <modifiedEdition>FREE</modifiedEdition>
-   <modifiedVersion>10.2.2</modifiedVersion>
+   <modifiedVersion>10.0.1</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>/Users/nguyenduy/Desktop/Tester/Katalon/MyCV_Autotest/MyCV_Autotest.prj</projectFileLocation>
+   <projectFileLocation>/Users/nguyettt5/Desktop/Test/Katalon/My/katalon-mycv/MyCV_Autotest.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

@@ -17,7 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.navigateToUrl(GlobalVariable.G_base_url + '/auth/login')
+WebUI.navigateToUrl(GlobalVariable.G_base_url, FailureHandling.STOP_ON_FAILURE)
 
-
-WebUI.waitForElementVisible(findTestObject('Common/Login/titleLogin'), 30)

@@ -16,6 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.testobject.ConditionType
 
 import groovy.json.JsonSlurper as JsonSlurper
 
@@ -54,7 +55,10 @@ def skillJson = new JsonSlurper().parseText(skillResponse.getResponseText())
 def apiSkills = skillJson.Items
 
 assert apiSkills.size() > 0 : 'API trả về danh sách skill rỗng'
+ 
+println("Verify data: ")
 
+WebUI.waitForElementVisible(findTestObject('Viewer/ProfileView/phoneValue'), 0)
 
 // 6. Verify Profile data 
 WebUI.verifyElementText(findTestObject('Viewer/ProfileView/phoneValue'), phoneFromAPI)

@@ -7,12 +7,11 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//section[@id='home']//p[text()='Phone']/following-sibling::p
+         <value>//p[@test_id='home-profile-phone-value']
 </value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

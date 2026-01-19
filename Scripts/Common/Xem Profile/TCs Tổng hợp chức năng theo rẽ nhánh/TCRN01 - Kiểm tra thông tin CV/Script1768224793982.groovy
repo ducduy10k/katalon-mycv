@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 
 
-WebUI.callTestCase(findTestCase('Common/Xem Profile/Entry point/TCRN01 - Section Education tại MH Home'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/Xem Profile/Entry point/TCRN01 - MH Home'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Common/Xem Profile/Kiểm tra chức năng/Kiểm tra thông tin CV'), [:], FailureHandling.STOP_ON_FAILURE)
 

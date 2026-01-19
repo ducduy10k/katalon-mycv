@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TCRN02 - Vào luôn màn hình login bằng URL</name>
+   <name>TCRN01 - MH Home</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>6575039c-9f20-4feb-b9f2-0ad3d2e46e6e</testCaseGuid>
+   <testCaseGuid>7a94cb81-94a8-417d-b60e-8bad5e2aeb0e</testCaseGuid>
 </TestCaseEntity>

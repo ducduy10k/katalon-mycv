@@ -8,28 +8,20 @@
       <description></description>
       <initValue>'https://devduynd.web.app'</initValue>
       <name>G_base_url</name>
-      <protected>false</protected>
-      <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'test@yopmail.com'</initValue>
       <name>G_user_name</name>
-      <protected>false</protected>
-      <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
+      <initValue>'RigbBhfdqOBGNlJIWM1ClA=='</initValue>
       <name>G_password</name>
-      <protected>true</protected>
-      <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'9cf33e51-2a26-47c8-92b8-d350f05a6c28'</initValue>
       <name>G_userIdDefault</name>
-      <protected>false</protected>
-      <valueType>STRING</valueType>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
