@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TCRN01 - Xem MH Skill</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>68e1777a-d440-4dac-ac7a-775a6d9f6253</testCaseGuid>
-</TestCaseEntity>

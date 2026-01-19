@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TCRN01 - Section Profile tại MH Home</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>bac60119-c0a4-419e-a975-45a0fcbc2562</testCaseGuid>
-</TestCaseEntity>

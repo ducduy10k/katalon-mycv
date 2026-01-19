@@ -32,11 +32,11 @@ class BrowserListener {
 		try {
 			if (DriverFactory.getWebDriver() == null) {
 				WebUI.openBrowser("")
-				WebUI.maximizeWindow()
+//				WebUI.maximizeWindow()
 			}
 		} catch (e) {
 			WebUI.openBrowser("")
-			WebUI.maximizeWindow()
+//			WebUI.maximizeWindow()
 		}
 		
 	}
