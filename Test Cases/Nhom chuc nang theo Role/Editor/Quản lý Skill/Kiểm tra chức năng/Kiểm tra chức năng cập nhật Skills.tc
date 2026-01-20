@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Kiểm tra chức năng cập nhật Skills</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e4d0ca2e-84c8-4cec-9853-e4fbc608aabd</testCaseGuid>
+</TestCaseEntity>

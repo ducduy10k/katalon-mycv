@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class,'p-dialog-content')]//input[@formcontrolname='name']
+         <value>//input[@test_id='builder-skill-name-input']
 </value>
       </entry>
       <entry>

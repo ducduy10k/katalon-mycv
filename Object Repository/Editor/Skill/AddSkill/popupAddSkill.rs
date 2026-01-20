@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class,'p-dialog-content')]</value>
+         <value>//*[@test_id='builder-skill-dialog']//div[contains(@class,'p-dialog-content')]</value>
       </entry>
       <entry>
          <key>BASIC</key>

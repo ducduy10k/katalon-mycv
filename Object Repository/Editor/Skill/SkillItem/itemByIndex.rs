@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>inputIcon</name>
+   <name>itemByIndex</name>
    <tag></tag>
-   <elementGuidId>e7f07fcb-c104-47b2-9ff4-733c8f0da68a</elementGuidId>
+   <elementGuidId>3eab70c5-8dc5-47bb-9e7d-a94a0f2bb79a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@test_id='builder-skill-icon-input']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@test_id='builder-skill-item-${index}']
+</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

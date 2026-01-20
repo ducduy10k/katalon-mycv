@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class,'p-dialog-content')]//button[@type='submit']</value>
+         <value>//button[@test_id='builder-skill-submit-btn']</value>
       </entry>
       <entry>
          <key>BASIC</key>

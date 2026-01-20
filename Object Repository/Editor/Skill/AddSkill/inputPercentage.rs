@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@formcontrolname='percentage']</value>
+         <value>//input[@test_id='builder-skill-percentage-input']</value>
       </entry>
       <entry>
          <key>BASIC</key>

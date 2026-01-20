@@ -17,6 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.testobject.ConditionType
 
 WebUI.waitForElementClickable(findTestObject('Editor/Skill/btnNewSkill'), 10)
 
@@ -55,3 +56,16 @@ WebUI.setText(findTestObject('Editor/Skill/AddSkill/inputIcon'), icon)
 // Submit
 WebUI.click(findTestObject('Editor/Skill/AddSkill/btnSubmitNewSkill'))
 
+TestObject skillName = new TestObject('skillName')
+skillName.addProperty('xpath', ConditionType.EQUALS,
+    "//div[contains(@test_id,'builder-skill-item-')][.//p[normalize-space()='" + name + "']]//p")
+
+TestObject skillPercent = new TestObject('skillPercent')
+skillPercent.addProperty('xpath', ConditionType.EQUALS,
+    "//div[contains(@test_id,'builder-skill-item-')][.//p[normalize-space()='" + name + "']]//span[contains(@test_id,'builder-skill-item-percentage-value-')]")
+
+WebUI.waitForElementVisible(skillName, 10)
+
+WebUI.verifyElementText(skillName, name)
+
+WebUI.verifyElementText(skillPercent, (percentage + '%'))

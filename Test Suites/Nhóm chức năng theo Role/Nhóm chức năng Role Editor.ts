@@ -33,6 +33,13 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
+      <guid>2b931769-9349-4538-9713-a63e7b0779b2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Nhom chuc nang theo Role/Editor/Quản lý Skill/TCs tổng hợp chức năng theo rẽ nhánh/TCRN02 - Kiểm tra chức năng Update Skills</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>9e292280-d8bb-43fb-884f-c4bc7da3f996</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

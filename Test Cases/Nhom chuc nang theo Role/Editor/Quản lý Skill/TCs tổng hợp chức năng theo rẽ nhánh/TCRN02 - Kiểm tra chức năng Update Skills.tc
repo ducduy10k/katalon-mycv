@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCRN02 - Kiểm tra chức năng Update Skills</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4674655b-466e-451c-82d5-70e09be81500</testCaseGuid>
+</TestCaseEntity>

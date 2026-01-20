@@ -22,37 +22,50 @@ import com.kms.katalon.core.testobject.ConditionType
 def data = TestDataFactory.findTestData('AddSkillData')
 
 String name = data.getValue('name', 1)
+String icon = data.getValue('icon', 1)
+
+String updatedName = name + ' Updated'
+String updatedPercentage = '80'
+String updatedIcon = icon
 
 TestObject item = new TestObject('skillItem')
 item.addProperty('xpath', ConditionType.EQUALS,
     "//div[contains(@test_id,'builder-skill-item-')][.//p[normalize-space()='" + name + "']]")
 
-TestObject skillItems = new TestObject('skillItems')
-skillItems.addProperty('xpath', ConditionType.EQUALS,
-    "//div[contains(@test_id,'builder-skill-item-')]")
-
 if (!WebUI.waitForElementVisible(item, 2, FailureHandling.OPTIONAL)) {
-    WebUI.comment('Skill not found, create new before delete')
+    WebUI.comment('Skill not found, create new before update')
     WebUI.callTestCase(findTestCase('Nhom chuc nang theo Role/Editor/Quản lý Skill/Kiểm tra chức năng/Kiểm tra chức năng thêm mới Skills'),
         [:], FailureHandling.STOP_ON_FAILURE)
 }
 
-TestObject deleteIcon = new TestObject('skillDelete')
-deleteIcon.addProperty('xpath', ConditionType.EQUALS,
-    "//div[contains(@test_id,'builder-skill-item-')][.//p[normalize-space()='" + name + "']]//i[contains(@test_id,'builder-skill-item-delete-')]")
+WebUI.click(item)
 
-int beforeCount = WebUI.findWebElements(skillItems, 10).size()
+WebUI.waitForElementVisible(findTestObject('Editor/Skill/AddSkill/popupAddSkill'), 10)
 
-WebUI.waitForElementVisible(deleteIcon, 10)
+WebUI.clearText(findTestObject('Editor/Skill/AddSkill/inputSkillName'))
 
-WebUI.click(deleteIcon)
+WebUI.setText(findTestObject('Editor/Skill/AddSkill/inputSkillName'), updatedName)
 
-WebUI.waitForElementVisible(findTestObject('Editor/Skill/DeleteSkill/btnConfirmYes'), 10)
+WebUI.clearText(findTestObject('Editor/Skill/AddSkill/inputPercentage'))
 
-WebUI.click(findTestObject('Editor/Skill/DeleteSkill/btnConfirmYes'))
+WebUI.setText(findTestObject('Editor/Skill/AddSkill/inputPercentage'), updatedPercentage)
 
-WebUI.delay(1)
+WebUI.clearText(findTestObject('Editor/Skill/AddSkill/inputIcon'))
 
-int afterCount = WebUI.findWebElements(skillItems, 10).size()
+WebUI.setText(findTestObject('Editor/Skill/AddSkill/inputIcon'), updatedIcon)
 
-WebUI.verifyEqual(afterCount, (beforeCount - 1))
+WebUI.click(findTestObject('Editor/Skill/AddSkill/btnSubmitNewSkill'))
+
+TestObject updatedNameObj = new TestObject('updatedSkillName')
+updatedNameObj.addProperty('xpath', ConditionType.EQUALS,
+    "//div[contains(@test_id,'builder-skill-item-')][.//p[normalize-space()='" + updatedName + "']]//p")
+
+TestObject updatedPercentObj = new TestObject('updatedSkillPercent')
+updatedPercentObj.addProperty('xpath', ConditionType.EQUALS,
+    "//div[contains(@test_id,'builder-skill-item-')][.//p[normalize-space()='" + updatedName + "']]//span[contains(@test_id,'builder-skill-item-percentage-value-')]")
+
+WebUI.waitForElementVisible(updatedNameObj, 10)
+
+WebUI.verifyElementText(updatedNameObj, updatedName)
+
+WebUI.verifyElementText(updatedPercentObj, (updatedPercentage + '%'))

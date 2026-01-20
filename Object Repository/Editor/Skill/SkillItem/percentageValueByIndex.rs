@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>inputIcon</name>
+   <name>percentageValueByIndex</name>
    <tag></tag>
-   <elementGuidId>e7f07fcb-c104-47b2-9ff4-733c8f0da68a</elementGuidId>
+   <elementGuidId>012a14af-6977-46c3-bd88-b30a50b7cc74</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@test_id='builder-skill-icon-input']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//span[@test_id='builder-skill-item-percentage-value-${index}']
+</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
