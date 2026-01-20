@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Kiểm tra chức năng cập nhật Work Project</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3645dd16-ebd9-4f3f-b3da-355d8b0d17a7</testCaseGuid>
+</TestCaseEntity>

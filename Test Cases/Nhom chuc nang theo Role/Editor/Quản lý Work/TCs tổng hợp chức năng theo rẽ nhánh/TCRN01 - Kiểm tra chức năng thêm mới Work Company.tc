@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCRN01 - Kiểm tra chức năng thêm mới Work Company</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9fdd0400-639e-4d33-b928-1dff8512d759</testCaseGuid>
+</TestCaseEntity>
