@@ -17,29 +17,33 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
-import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 def data = TestDataFactory.findTestData('AddSkillData')
 
 String name = data.getValue('name', 1)
 
 TestObject item = new TestObject('skillItem')
-item.addProperty('xpath', ConditionType.EQUALS,
-    "//div[contains(@test_id,'builder-skill-item-')][.//p[normalize-space()='" + name + "']]")
+
+item.addProperty('xpath', ConditionType.EQUALS, ('//div[contains(@test_id,\'builder-skill-item-\')][.//p[normalize-space()=\'' + 
+    name) + '\']]')
 
 TestObject skillItems = new TestObject('skillItems')
-skillItems.addProperty('xpath', ConditionType.EQUALS,
-    "//div[contains(@test_id,'builder-skill-item-')]")
 
-if (!WebUI.waitForElementVisible(item, 2, FailureHandling.OPTIONAL)) {
+skillItems.addProperty('xpath', ConditionType.EQUALS,
+    '//div[starts-with(@test_id,\'builder-skill-item-\') and not(contains(@test_id,\'icon-wrap\'))]')
+
+if (!(WebUI.waitForElementVisible(item, 2, FailureHandling.OPTIONAL))) {
     WebUI.comment('Skill not found, create new before delete')
-    WebUI.callTestCase(findTestCase('Nhom chuc nang theo Role/Editor/Quản lý Skill/Kiểm tra chức năng/Kiểm tra chức năng thêm mới Skills'),
+
+    WebUI.callTestCase(findTestCase('Nhom chuc nang theo Role/Editor/Quản lý Skill/Kiểm tra chức năng/Kiểm tra chức năng thêm mới Skills'), 
         [:], FailureHandling.STOP_ON_FAILURE)
 }
 
 TestObject deleteIcon = new TestObject('skillDelete')
-deleteIcon.addProperty('xpath', ConditionType.EQUALS,
-    "//div[contains(@test_id,'builder-skill-item-')][.//p[normalize-space()='" + name + "']]//i[contains(@test_id,'builder-skill-item-delete-')]")
+
+deleteIcon.addProperty('xpath', ConditionType.EQUALS, ('//div[contains(@test_id,\'builder-skill-item-\')][.//p[normalize-space()=\'' + 
+    name) + '\']]//i[contains(@test_id,\'builder-skill-item-delete-\')]')
 
 int beforeCount = WebUI.findWebElements(skillItems, 10).size()
 
@@ -51,8 +55,8 @@ WebUI.waitForElementVisible(findTestObject('Editor/Skill/DeleteSkill/btnConfirmY
 
 WebUI.click(findTestObject('Editor/Skill/DeleteSkill/btnConfirmYes'))
 
-WebUI.delay(1)
+WebUI.delay(2)
 
 int afterCount = WebUI.findWebElements(skillItems, 10).size()
 
-WebUI.verifyEqual(afterCount, (beforeCount - 1))
+WebUI.verifyEqual(afterCount, beforeCount - 1)
