@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TCRN05 - Kiểm tra chức năng cập nhật Work Project</name>
+   <name>TCRN02 - Kiểm tra chức năng cập nhật Work Project</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>

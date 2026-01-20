@@ -50,7 +50,7 @@
       <guid>837a221f-4e50-4045-b044-791d2aef2f08</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Nhom chuc nang theo Role/Editor/Quản lý Work/TCs tổng hợp chức năng theo rẽ nhánh/TCRN01 - Kiểm tra chức năng thêm mới Work Company</testCaseId>
+      <testCaseId>Test Cases/Nhom chuc nang theo Role/Editor/Quản lý Work/TCs tổng hợp chức năng theo rẽ nhánh/TCRN02 - Kiểm tra chức năng thêm mới Work Company</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -64,28 +64,28 @@
       <guid>123628e6-26bf-44e1-a885-a12d49acc2f2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Nhom chuc nang theo Role/Editor/Quản lý Work/TCs tổng hợp chức năng theo rẽ nhánh/TCRN04 - Kiểm tra chức năng thêm mới Work Project</testCaseId>
+      <testCaseId>Test Cases/Nhom chuc nang theo Role/Editor/Quản lý Work/TCs tổng hợp chức năng theo rẽ nhánh/TCRN02 - Kiểm tra chức năng thêm mới Work Project</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>7c05c303-c559-4bd7-955a-1b841f7987b7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Nhom chuc nang theo Role/Editor/Quản lý Work/TCs tổng hợp chức năng theo rẽ nhánh/TCRN05 - Kiểm tra chức năng cập nhật Work Project</testCaseId>
+      <testCaseId>Test Cases/Nhom chuc nang theo Role/Editor/Quản lý Work/TCs tổng hợp chức năng theo rẽ nhánh/TCRN02 - Kiểm tra chức năng cập nhật Work Project</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>d83b2251-9c5b-4c0d-b8ae-a327acd96c25</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Nhom chuc nang theo Role/Editor/Quản lý Work/TCs tổng hợp chức năng theo rẽ nhánh/TCRN06 - Kiểm tra chức năng xoá Work Project</testCaseId>
+      <testCaseId>Test Cases/Nhom chuc nang theo Role/Editor/Quản lý Work/TCs tổng hợp chức năng theo rẽ nhánh/TCRN02 - Kiểm tra chức năng xoá Work Project</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>e1c77615-bc6b-4b93-9135-99317a425874</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Nhom chuc nang theo Role/Editor/Quản lý Work/TCs tổng hợp chức năng theo rẽ nhánh/TCRN03 - Kiểm tra chức năng xoá Work Company</testCaseId>
+      <testCaseId>Test Cases/Nhom chuc nang theo Role/Editor/Quản lý Work/TCs tổng hợp chức năng theo rẽ nhánh/TCRN02 - Kiểm tra chức năng xoá Work Company</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TCRN06 - Kiểm tra chức năng xoá Work Project</name>
+   <name>TCRN02 - Kiểm tra chức năng thêm mới Work Project</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>0bde5724-8080-41de-ab45-5b166dcafcd1</testCaseGuid>
+   <testCaseGuid>f33f8354-c50c-45d5-8bf6-efcdef47fff9</testCaseGuid>
 </TestCaseEntity>
