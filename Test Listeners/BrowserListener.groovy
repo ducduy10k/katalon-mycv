@@ -64,6 +64,6 @@ class BrowserListener {
 	 */
 	@AfterTestSuite
 	def closeBrowser() {
-        WebUI.closeBrowser()
+//        WebUI.closeBrowser()
     }
 }

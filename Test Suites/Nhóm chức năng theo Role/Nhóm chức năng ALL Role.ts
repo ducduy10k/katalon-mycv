@@ -15,7 +15,7 @@
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Nhóm chức năng theo Role/Nhóm chức năng Role Editor</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Nhóm chức năng theo Role/Nhóm chức năng Role Viewer</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -25,7 +25,7 @@
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Nhóm chức năng theo Role/Nhóm chức năng Role Viewer</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Nhóm chức năng theo Role/Nhóm chức năng Role Editor</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>

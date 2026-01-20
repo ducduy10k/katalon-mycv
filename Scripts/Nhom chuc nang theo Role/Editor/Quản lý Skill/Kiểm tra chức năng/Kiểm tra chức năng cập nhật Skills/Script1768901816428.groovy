@@ -17,30 +17,35 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
-import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 def data = TestDataFactory.findTestData('AddSkillData')
 
 String name = data.getValue('name', 1)
+
 String icon = data.getValue('icon', 1)
 
 String updatedName = name + ' Updated'
+
 String updatedPercentage = '80'
+
 String updatedIcon = icon
 
 TestObject item = new TestObject('skillItem')
-item.addProperty('xpath', ConditionType.EQUALS,
-    "//div[contains(@test_id,'builder-skill-item-')][.//p[normalize-space()='" + name + "']]")
 
-if (!WebUI.waitForElementVisible(item, 2, FailureHandling.OPTIONAL)) {
+item.addProperty('xpath', ConditionType.EQUALS, ('//div[contains(@test_id,\'builder-skill-item-\')][.//p[normalize-space()=\'' + 
+    name) + '\']]')
+
+if (!(WebUI.waitForElementVisible(item, 2, FailureHandling.OPTIONAL))) {
     WebUI.comment('Skill not found, create new before update')
-    WebUI.callTestCase(findTestCase('Nhom chuc nang theo Role/Editor/Quản lý Skill/Kiểm tra chức năng/Kiểm tra chức năng thêm mới Skills'),
+
+    WebUI.callTestCase(findTestCase('Nhom chuc nang theo Role/Editor/Quản lý Skill/Kiểm tra chức năng/Kiểm tra chức năng thêm mới Skills'), 
         [:], FailureHandling.STOP_ON_FAILURE)
 }
 
 WebUI.click(item)
 
-WebUI.waitForElementVisible(findTestObject('Editor/Skill/AddSkill/popupAddSkill'), 10)
+WebUI.waitForElementVisible(findTestObject('Editor/Skill/AddSkill/inputSkillName'), 10)
 
 WebUI.clearText(findTestObject('Editor/Skill/AddSkill/inputSkillName'))
 
@@ -57,15 +62,18 @@ WebUI.setText(findTestObject('Editor/Skill/AddSkill/inputIcon'), updatedIcon)
 WebUI.click(findTestObject('Editor/Skill/AddSkill/btnSubmitNewSkill'))
 
 TestObject updatedNameObj = new TestObject('updatedSkillName')
-updatedNameObj.addProperty('xpath', ConditionType.EQUALS,
-    "//div[contains(@test_id,'builder-skill-item-')][.//p[normalize-space()='" + updatedName + "']]//p")
+
+updatedNameObj.addProperty('xpath', ConditionType.EQUALS, ('//div[contains(@test_id,\'builder-skill-item-\')][.//p[normalize-space()=\'' + 
+    updatedName) + '\']]//p')
 
 TestObject updatedPercentObj = new TestObject('updatedSkillPercent')
-updatedPercentObj.addProperty('xpath', ConditionType.EQUALS,
-    "//div[contains(@test_id,'builder-skill-item-')][.//p[normalize-space()='" + updatedName + "']]//span[contains(@test_id,'builder-skill-item-percentage-value-')]")
+
+updatedPercentObj.addProperty('xpath', ConditionType.EQUALS, ('//div[contains(@test_id,\'builder-skill-item-\')][.//p[normalize-space()=\'' + 
+    updatedName) + '\']]//span[contains(@test_id,\'builder-skill-item-percentage-value-\')]')
 
 WebUI.waitForElementVisible(updatedNameObj, 10)
 
 WebUI.verifyElementText(updatedNameObj, updatedName)
 
-WebUI.verifyElementText(updatedPercentObj, (updatedPercentage + '%'))
+WebUI.verifyElementText(updatedPercentObj, updatedPercentage + '%')
+

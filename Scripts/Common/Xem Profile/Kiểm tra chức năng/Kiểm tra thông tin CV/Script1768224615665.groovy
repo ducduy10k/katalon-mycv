@@ -85,13 +85,13 @@ println("UserId: $userId")
 WebUI.waitForElementVisible(findTestObject('Viewer/SkillsSection/lblSkillPercent'), 15)
 
 // =====================
-// 2. BUILD EXPECTED LIST (API → SORT DESC → TOP 10)
+// 2. BUILD EXPECTED LIST (API -> SORT DESC)
 // =====================
 def expectedSkills = apiSkills.sort({ def a, def b ->
             ((b['percentage']) as Integer) <=> ((a['percentage']) as Integer)
-    }).take(10)
+    })
 
-println('Expected skills (API sorted DESC, max 10):')
+println('Expected skills (API sorted DESC):')
 
 expectedSkills.each({ 
         println("$it.name - $it.percentage%")
@@ -107,17 +107,12 @@ int uiSkillCount = percentElements.size()
 println('UI skill count: ' + uiSkillCount)
 
 // =====================
-// 5. VERIFY MAX 10 RECORDS
-// =====================
-assert uiSkillCount <= 10 : 'UI hiển thị quá 10 skills'
-
-// =====================
-// 6. VERIFY UI COUNT = EXPECTED COUNT
+// 5. VERIFY UI COUNT = EXPECTED COUNT
 // =====================
 WebUI.verifyEqual(uiSkillCount, expectedSkills.size())
 
 // =====================
-// 7. VERIFY SORT DESC + VALUE MATCH API
+// 6. VERIFY SORT DESC + VALUE MATCH API
 // =====================
 for (int i = 0; i < expectedSkills.size(); i++) {
     String expectedName = expectedSkills[i].name
@@ -140,16 +135,4 @@ for (int i = 0; i < expectedSkills.size(); i++) {
     WebUI.verifyEqual(actualPercentText, expectedPercentText)
 }
 
-// =====================
-// 8. VERIFY SKILL THỨ 11 KHÔNG HIỂN THỊ (NẾU CÓ)
-// =====================
-if (apiSkills.size() > 10) {
-    String skill11Name = (apiSkills..sort({ def a, def b ->
-                ((b['percentage']) as Integer) <=> ((a['percentage']) as Integer)
-        }).get(10).name)
-
-    WebUI.verifyTextNotPresent(skill11Name, false)
-}
-
-println('✅ VERIFY SKILLS: SORT DESC + MAX 10 + MATCH API — PASSED')
-
+println('✅ VERIFY SKILLS: SORT DESC + MATCH API — PASSED')
