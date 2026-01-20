@@ -17,5 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.navigateToUrl(GlobalVariable.G_base_url, FailureHandling.STOP_ON_FAILURE)
+String currentUrl = WebUI.getUrl()
 
+if (currentUrl.contains('/builder')) {
+    WebUI.waitForElementVisible(findTestObject('Editor/HeaderNav/viewNav'), 10)
+    WebUI.click(findTestObject('Editor/HeaderNav/viewNav'))
+} else {
+    WebUI.navigateToUrl(GlobalVariable.G_base_url, FailureHandling.STOP_ON_FAILURE)
+}
+
+WebUI.waitForElementVisible(findTestObject('Viewer/HeaderNavbar/homeNav'), 10)

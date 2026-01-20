@@ -88,4 +88,11 @@
       <testCaseId>Test Cases/Nhom chuc nang theo Role/Editor/Quản lý Work/TCs tổng hợp chức năng theo rẽ nhánh/TCRN02 - Kiểm tra chức năng xoá Work Company</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>cb7a5da6-19b2-45e9-a287-6fb2c4c2bc48</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Common/Xem Profile/TCs Tổng hợp chức năng theo rẽ nhánh/TCRN01 - Kiểm tra thông tin CV</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
