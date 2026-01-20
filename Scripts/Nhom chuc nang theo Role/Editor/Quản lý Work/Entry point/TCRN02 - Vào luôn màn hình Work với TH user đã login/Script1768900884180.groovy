@@ -17,8 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Nhom chuc nang theo Role/Editor/Quản lý Work/Entry point/TCRN02 - Vào luôn màn hình Work với TH user đã login'),
-    [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Nhom chuc nang theo Role/Editor/Quản lý Work/Kiểm tra chức năng/Kiểm tra chức năng cập nhật Work Company'),
-    [:], FailureHandling.STOP_ON_FAILURE)
+String currentUrl = WebUI.getUrl()
+
+if (!(currentUrl.contains('/builder/'))) {
+    WebUI.navigateToUrl(GlobalVariable.G_base_url)
+
+    WebUI.waitForElementVisible(findTestObject('Viewer/HeaderNavbar/avatarUser'), 10)
+    WebUI.click(findTestObject('Viewer/HeaderNavbar/avatarUser'))
+
+    WebUI.waitForElementVisible(findTestObject('Viewer/HeaderNavbar/AvatarUserOptions/builderOption'), 10)
+    WebUI.click(findTestObject('Viewer/HeaderNavbar/AvatarUserOptions/builderOption'))
+} else {
+    WebUI.comment('Đã ở đúng URL, không cần navigate')
+}
+
+WebUI.waitForElementVisible(findTestObject('Editor/LeftPanel/menuWork'), 10)
+
+WebUI.click(findTestObject('Editor/LeftPanel/menuWork'))

@@ -19,15 +19,20 @@ import org.openqa.selenium.Keys as Keys
 
 String currentUrl = WebUI.getUrl()
 if (!currentUrl.contains('/builder/')) {
-	WebUI.navigateToUrl(GlobalVariable.G_base_url + '/builder/skill')
+    WebUI.navigateToUrl(GlobalVariable.G_base_url)
+
+    WebUI.waitForElementVisible(findTestObject('Viewer/HeaderNavbar/avatarUser'), 10)
+    WebUI.click(findTestObject('Viewer/HeaderNavbar/avatarUser'))
+
+    WebUI.waitForElementVisible(findTestObject('Viewer/HeaderNavbar/AvatarUserOptions/builderOption'), 10)
+    WebUI.click(findTestObject('Viewer/HeaderNavbar/AvatarUserOptions/builderOption'))
 } else {
-	WebUI.comment('Đã ở đúng URL, không cần navigate')
-	
-	WebUI.waitForElementVisible(findTestObject('Editor/LeftPanel/menuSkill'), 10)
-	
-	WebUI.click(findTestObject('Editor/LeftPanel/menuSkill'))
+    WebUI.comment('Đã ở đúng URL, không cần navigate')
 }
 
+WebUI.waitForElementVisible(findTestObject('Editor/LeftPanel/menuSkill'), 10)
+
+WebUI.click(findTestObject('Editor/LeftPanel/menuSkill'))
 
 
 

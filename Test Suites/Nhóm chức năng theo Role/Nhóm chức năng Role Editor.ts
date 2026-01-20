@@ -22,21 +22,21 @@
       <guid>0e7dbe57-ddba-411d-a57a-2e8c48e876eb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Nhom chuc nang theo Role/Editor/Quản lý Social/TCs tổng hợp chức năng theo rẽ nhánh/TCRN01 - Kiểm tra chức năng Update Social</testCaseId>
+      <testCaseId>Test Cases/Nhom chuc nang theo Role/Editor/Quản lý Social/TCs tổng hợp chức năng theo rẽ nhánh/TCRN02 - Kiểm tra chức năng Update Social</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>d6634975-9952-4872-b58c-4e18afa33c4e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Nhom chuc nang theo Role/Editor/Quản lý Skill/TCs tổng hợp chức năng theo rẽ nhánh/TCRN01 - Kiểm tra chức năng Add Skills</testCaseId>
+      <testCaseId>Test Cases/Nhom chuc nang theo Role/Editor/Quản lý Skill/TCs tổng hợp chức năng theo rẽ nhánh/TCRN02 - Kiểm tra chức năng Add Skills</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>9e292280-d8bb-43fb-884f-c4bc7da3f996</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Nhom chuc nang theo Role/Editor/Quản lý Skill/TCs tổng hợp chức năng theo rẽ nhánh/TCRN01 - Kiểm tra chức năng xoá Skills</testCaseId>
+      <testCaseId>Test Cases/Nhom chuc nang theo Role/Editor/Quản lý Skill/TCs tổng hợp chức năng theo rẽ nhánh/TCRN02 - Kiểm tra chức năng xoá Skills</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
