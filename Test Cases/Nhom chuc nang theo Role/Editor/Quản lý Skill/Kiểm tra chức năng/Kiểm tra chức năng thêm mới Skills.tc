@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Kiểm tra chức năng thêm mới Skills</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>f535e199-8fa8-43ab-88e4-aead9e9f3fe0</testCaseGuid>
-</TestCaseEntity>

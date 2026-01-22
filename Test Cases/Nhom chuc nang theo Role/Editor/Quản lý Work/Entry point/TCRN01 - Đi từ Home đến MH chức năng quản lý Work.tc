@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TCRN01 - Đi từ Home đến MH chức năng quản lý Work</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>9706ead7-174b-4d72-abc0-b4ca7e2c4e82</testCaseGuid>
-</TestCaseEntity>

@@ -17,12 +17,25 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//Precondition
-WebUI.navigateToUrl(GlobalVariable.G_base_url, FailureHandling.STOP_ON_FAILURE)
+String currentUrl = WebUI.getUrl()
+if (!currentUrl.contains('/builder/')) {
+    WebUI.navigateToUrl(GlobalVariable.G_base_url)
 
-WebUI.waitForElementVisible(findTestObject('Viewer/HeaderNavbar/avatarUser'), 0)
-
-WebUI.click(findTestObject('Viewer/HeaderNavbar/avatarUser'))
+    def isLoggedIn  =  WebUI.waitForElementVisible(findTestObject('Viewer/HeaderNavbar/avatarUser'), 10)
+	
+	if (isLoggedIn) {
+		WebUI.click(findTestObject('Viewer/HeaderNavbar/avatarUser'))
+	    WebUI.waitForElementVisible(findTestObject('Viewer/HeaderNavbar/AvatarUserOptions/builderOption'), 10)
+	    WebUI.click(findTestObject('Viewer/HeaderNavbar/AvatarUserOptions/builderOption'))
+	} else {
+		// ===== PRE-CONDITION =====
+		WebUI.callTestCase(findTestCase('Common/Login/TCs tổng hợp chức năng theo rẽ nhánh/TCRN01 - Kiểm tra chức năng login'),
+			[:], FailureHandling.STOP_ON_FAILURE)
+	}
+   
+} else {
+    WebUI.comment('Đã ở đúng URL, không cần navigate')
+}
 
 WebUI.waitForElementVisible(findTestObject('Viewer/HeaderNavbar/AvatarUserOptions/builderOption'), 0)
 

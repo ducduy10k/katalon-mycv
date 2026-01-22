@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Kiểm tra chức năng xoá Work Project</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>13dbf8e6-b8cf-42fc-b85d-792ba840ab83</testCaseGuid>
-</TestCaseEntity>
