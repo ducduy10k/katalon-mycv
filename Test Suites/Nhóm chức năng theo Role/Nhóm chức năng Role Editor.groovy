@@ -31,9 +31,11 @@ import com.kms.katalon.core.annotation.TearDownTestCase
 /**
  * Setup test suite environment.
  */
-@SetUp(skipped = true) // Please change skipped to be false to activate this method.
+@SetUp(skipped = false)
 def setUp() {
-	// Put your code here.
+	WebUI.callTestCase(findTestCase('Nhom chuc nang theo Role/Editor/Login/TCs tổng hợp chức năng theo rẽ nhánh/TCRN02 - Kiểm tra chức năng login'),
+		[:],
+		FailureHandling.STOP_ON_FAILURE)
 }
 
 /**

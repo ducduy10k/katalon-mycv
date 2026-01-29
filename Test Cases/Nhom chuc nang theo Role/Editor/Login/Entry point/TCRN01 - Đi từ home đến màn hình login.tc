@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TCRN02 - Vào luôn màn hình Work với TH user đã login</name>
+   <name>TCRN01 - Đi từ home đến màn hình login</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>4bb0c1fe-116e-44f5-8828-aa359a68637c</testCaseGuid>
+   <testCaseGuid>c86c072d-29d5-4846-a0f1-e8ba421c7a55</testCaseGuid>
 </TestCaseEntity>

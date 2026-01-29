@@ -6,7 +6,7 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'localhost:4200'</initValue>
+      <initValue>'http://localhost:4200'</initValue>
       <name>G_base_url</name>
       <protected>false</protected>
       <valueType>STRING</valueType>

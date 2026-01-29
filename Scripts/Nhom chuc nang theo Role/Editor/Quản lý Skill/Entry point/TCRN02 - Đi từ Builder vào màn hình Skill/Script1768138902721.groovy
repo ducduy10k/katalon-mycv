@@ -17,7 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Common/Login/Entry point/TCRN01 - Đi từ home đến màn hình login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForElementVisible(findTestObject('Editor/LeftPanel/menuSkill'), 10)
 
-WebUI.callTestCase(findTestCase('Common/Login/Kiểm tra chức năng/Kiểm tra chức năng login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Editor/LeftPanel/menuSkill'))
+
+
 

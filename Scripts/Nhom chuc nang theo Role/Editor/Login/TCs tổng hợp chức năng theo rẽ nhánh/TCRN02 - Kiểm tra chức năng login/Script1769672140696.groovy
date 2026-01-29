@@ -17,27 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-String currentUrl = WebUI.getUrl()
-if (!currentUrl.contains('/builder/')) {
-    WebUI.navigateToUrl(GlobalVariable.G_base_url)
+WebUI.callTestCase(findTestCase('Nhom chuc nang theo Role/Editor/Login/Entry point/TCRN01 - Đi từ home đến màn hình login'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
 
-    def isLoggedIn  =  WebUI.waitForElementVisible(findTestObject('Viewer/HeaderNavbar/avatarUser'), 10)
-	
-	if (isLoggedIn) {
-		WebUI.click(findTestObject('Viewer/HeaderNavbar/avatarUser'))
-	    WebUI.waitForElementVisible(findTestObject('Viewer/HeaderNavbar/AvatarUserOptions/builderOption'), 10)
-	    WebUI.click(findTestObject('Viewer/HeaderNavbar/AvatarUserOptions/builderOption'))
-	} else {
-		// ===== PRE-CONDITION =====
-		WebUI.callTestCase(findTestCase('Common/Login/TCs tổng hợp chức năng theo rẽ nhánh/TCRN01 - Kiểm tra chức năng login'),
-			[:], FailureHandling.STOP_ON_FAILURE)
-	}
-   
-} else {
-    WebUI.comment('Đã ở đúng URL, không cần navigate')
-}
-
-WebUI.waitForElementVisible(findTestObject('Editor/LeftPanel/menuSocial'), 10)
-
-WebUI.click(findTestObject('Editor/LeftPanel/menuSocial'))
+WebUI.callTestCase(findTestCase('Common/Login/Kiểm tra chức năng/Kiểm tra chức năng login'), [:], FailureHandling.STOP_ON_FAILURE)
 

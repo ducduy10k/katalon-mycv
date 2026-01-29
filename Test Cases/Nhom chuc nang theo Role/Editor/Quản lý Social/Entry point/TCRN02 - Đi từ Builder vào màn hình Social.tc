@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TCRN02 - Vào luôn màn hình Social với TH user đã login</name>
+   <name>TCRN02 - Đi từ Builder vào màn hình Social</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
