@@ -20,7 +20,9 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 
 def data = TestDataFactory.findTestData('WorkData')
 
-String companyName = data.getValue('companyName', 1)
+String companyNameBase = data.getValue('companyName', 1)
+String uniqueSuffix = String.valueOf(System.currentTimeMillis())
+String companyName = companyNameBase + '_' + uniqueSuffix
 
 String companyFrom = data.getValue('companyFrom', 1)
 
@@ -70,7 +72,7 @@ WebUI.delay(1)
 
 WebUI.verifyElementText(findTestObject('Editor/Work/CompanyList/labelCompanyNameByIndex', [('index') : 0]), companyName)
 
-String updatedName = companyName + ' Updated'
+String updatedName = companyName + '_Updated'
 
 String updatedPosition = 'Backend'
 
@@ -110,7 +112,7 @@ WebUI.delay(1)
 
 WebUI.verifyElementText(findTestObject('Editor/Work/CompanyList/labelCompanyNameByIndex', [('index') : 0]), updatedName)
 
-String projectName = data.getValue('projectName', 1)
+String projectName = data.getValue('projectName', 1) + '_' + uniqueSuffix
 
 String projectFrom = data.getValue('projectFrom', 1)
 
@@ -188,11 +190,18 @@ if (!(WebUI.waitForElementVisible(projectShowBtn, 2, FailureHandling.OPTIONAL)))
     WebUI.waitForElementVisible(projectShowBtn, 5)
 }
 
+WebUI.waitForElementClickable(projectShowBtn, 10)
+
 WebUI.click(projectShowBtn)
 
-WebUI.waitForElementVisible(findTestObject('Editor/Work/ProjectForm/inputProjectName'), 10)
+def projectNameInput = findTestObject('Editor/Work/ProjectForm/inputProjectName')
 
-setInputValue(findTestObject('Editor/Work/ProjectForm/inputProjectName'), updatedProjectName)
+if (!(WebUI.waitForElementVisible(projectNameInput, 10, FailureHandling.OPTIONAL))) {
+    WebUI.click(projectShowBtn)
+    WebUI.waitForElementVisible(projectNameInput, 10, FailureHandling.STOP_ON_FAILURE)
+}
+
+setInputValue(projectNameInput, updatedProjectName)
 
 setInputValue(findTestObject('Editor/Work/ProjectForm/inputProjectDescription'), updatedProjectDescription)
 
@@ -200,7 +209,7 @@ WebUI.click(findTestObject('Editor/Work/ProjectForm/btnSubmitProject'))
 
 WebUI.delay(1)
 
-WebUI.verifyTextPresent(updatedName, false)
+WebUI.verifyTextPresent(updatedProjectName, false)
 
 def projectDeleteBtn = findTestObject('Editor/Work/ProjectList/btnDeleteByIndex', [('companyIndex') : 0, ('projectIndex') : 0])
 
@@ -231,4 +240,3 @@ WebUI.waitForElementVisible(findTestObject('Editor/Work/ConfirmDialog/btnConfirm
 WebUI.click(findTestObject('Editor/Work/ConfirmDialog/btnConfirmYes'))
 
 WebUI.delay(2)
-

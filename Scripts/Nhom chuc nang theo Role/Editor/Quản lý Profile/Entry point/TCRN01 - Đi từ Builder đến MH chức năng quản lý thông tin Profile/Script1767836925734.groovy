@@ -17,9 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.waitForElementVisible(findTestObject('Viewer/HeaderNavbar/AvatarUserOptions/builderOption'), 20)
+WebUI.waitForElementVisible(findTestObject('Editor/LeftPanel/menuProfile'), 20)
 
-WebUI.click(findTestObject('Viewer/HeaderNavbar/AvatarUserOptions/builderOption'))
-
-
+WebUI.click(findTestObject('Editor/LeftPanel/menuProfile'))
 

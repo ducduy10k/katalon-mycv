@@ -32,11 +32,11 @@ class BrowserListener {
 		try {
 			if (DriverFactory.getWebDriver() == null) {
 				WebUI.openBrowser("")
-//				WebUI.maximizeWindow()
+				WebUI.maximizeWindow()
 			}
 		} catch (e) {
 			WebUI.openBrowser("")
-//			WebUI.maximizeWindow()
+			WebUI.maximizeWindow()
 		}
 		
 	}
@@ -44,7 +44,7 @@ class BrowserListener {
 	@AfterTestCase
 	def closeIfSingleRun() {
 		if (RunConfiguration.getExecutionSource().contains('Test Case')) {
-//		    WebUI.closeBrowser()
+		    WebUI.closeBrowser()
 		}
 	}
 	
@@ -64,6 +64,6 @@ class BrowserListener {
 	 */
 	@AfterTestSuite
 	def closeBrowser() {
-//        WebUI.closeBrowser()
+        WebUI.closeBrowser()
     }
 }
