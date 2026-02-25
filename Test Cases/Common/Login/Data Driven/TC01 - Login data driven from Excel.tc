@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Run login scenarios from Excel and write per-row PASS/FAIL to output file.</description>
+   <name>TC01 - Login data driven from Excel</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ac352924-f3ff-43c0-b83d-f7cedb4dbca4</testCaseGuid>
+</TestCaseEntity>
